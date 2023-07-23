@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
@@ -28,16 +29,21 @@
             </div>
             <div class="comments">
                 <h2>What are the main reason for your rating</h2>
-                <textarea name="rating" id="rating" cols="70" rows="8" ></textarea>
+                <textarea name="rating" id="rating" cols="60" rows="8" ></textarea>
             </div>
             
             <div class="checkboxes">
-                <input type="checkbox" value="Front-end-projects">
-                <label for="Front-end-projects">I may be contacted about this feedback. <span><a href="#">Privacy Policy</a></span></label>
-                <br>
+                <div class="first">
+                    <input type="checkbox" id="feedback1">
+                    <label for="feedback1">I may be contacted about this feedback. <span><a href="#">Privacy Policy</a></span></label>
+                </div>
 
-                <input type="checkbox" value="wiki">
-                <label for="wiki">i'd like to help improve by joining the <span><a href="#">Reasearch Group.</a></span> </label>
+                <div class="first">
+                    <input type="checkbox" id="feedback2">
+                    <label for="feedback2">i'd like to help improve by joining the <span><a href="#">Reasearch Group.</a></span> </label>
+                </div>
+
+
             </div>
             <div class="buttons">
                 <input type="button" value="Submit" class="submit">

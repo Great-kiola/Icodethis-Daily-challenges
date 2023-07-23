@@ -35,14 +35,15 @@ body{
 }
 
 .headings p{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
 h1{
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-family: 'Merriweather', serif;
     font-weight: 700;
+    margin-bottom: 5px;
 }
 
 h2{
@@ -61,6 +62,52 @@ input[type="button"]{
     border-radius: 10px;
 }
 
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    outline: 2px solid var(--bg-container);
+    background-color: var(--bg-color);
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first{
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"]:checked{
+    background-color: var(--btn-color);
+    outline: none;
+}
+
+
+input[type="checkbox"]::after{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 900;
+    font-size: .7rem;
+    display: none;
+    color: var(--white);
+}
+
+input[type="checkbox"]:checked::after{
+    display: block;
+}
+
+
 .buttons{
     display: flex;
     align-items: center;
@@ -75,6 +122,10 @@ input[type="button"]{
 
 textarea{
     resize: none;
+    font-size: 1rem;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -94,7 +145,6 @@ box-icon{
 }
 
 box-icon:hover{
-    /* background-color: ; */
     box-shadow: var(--btn-color) 0px 7px 29px 0px;
 }
 
