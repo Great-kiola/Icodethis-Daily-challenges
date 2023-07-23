@@ -11,12 +11,21 @@ body{
     line-height: 1.5;
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--bg-color);
 }
 
+.bg-con{
+    width: 500px;
+    height: 700px;
+    margin: -450px -50px;
+    background-color: var(--bg-container);
+}
+
 .container{
+    min-height: 700px;
     background-color: var(--container-color);
     padding: 80px;
     border-radius: 30px;
