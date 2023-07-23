@@ -34,8 +34,20 @@ body{
     gap: 15px;
 }
 
+.headings p{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
 h1{
+    font-size: 1.2rem;
     font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1rem;
+    margin-bottom: 15px;
 }
 
 span a{
@@ -61,6 +73,30 @@ input[type="button"]{
     margin: 10px;
 }
 
+textarea{
+    resize: none;
+}
+
+
+.feedbacks{
+    display: flex;
+    align-items: center;
+}
+
+box-icon{
+    background-color: var(--white);
+    border: 2px solid var(--bg-container);
+    width: 100%;
+    height: 70px;
+    padding: 20px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+box-icon:hover{
+    /* background-color: ; */
+    box-shadow: var(--btn-color) 0px 7px 29px 0px;
+}
 
 :root{
     --bg-color: #f4f7ff;
