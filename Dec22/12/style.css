@@ -20,7 +20,7 @@ body{
 .bg-con{
     width: 500px;
     height: 700px;
-    margin: -450px -50px;
+    margin: -550px -50px;
     background-color: var(--bg-container);
 }
 
@@ -32,6 +32,7 @@ body{
     display:flex;
     flex-direction: column;
     gap: 15px;
+    margin: -500px -5px;
 }
 
 .headings p{
