@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     line-height: 1.5;
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
@@ -17,47 +17,47 @@ body{
     background-color: var(--bg-color);
 }
 
-.bg-con{
+.bg-con {
     width: 500px;
     height: 700px;
     margin: -550px -50px;
     background-color: var(--bg-container);
 }
 
-.container{
+.container {
     background-color: var(--container-color);
     padding: 80px;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 15px;
     margin: -500px -5px;
 }
 
-.headings p{
+.headings p {
     font-size: 1rem;
     font-weight: 700;
 }
 
-h1{
+h1 {
     font-size: 2rem;
     font-family: 'Merriweather', serif;
     font-weight: 700;
     margin-bottom: 5px;
 }
 
-h2{
+h2 {
     font-size: 1rem;
     margin-bottom: 15px;
 }
 
-span a{
+span a {
     color: var(--btn-color);
     text-decoration: none;
 }
 
-input[type="button"]{
+input[type="button"] {
     padding: 20px 35px;
     border: none;
     border-radius: 10px;
@@ -65,13 +65,13 @@ input[type="button"]{
     font-size: 1.1rem;
 }
 
-.checkboxes{
+.checkboxes {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
     height: 25px;
@@ -86,17 +86,17 @@ input[type="checkbox"]{
     justify-content: center;
 }
 
-.first{
+.first {
     display: flex;
     align-items: center;
 }
 
-input[type="checkbox"]:checked{
+input[type="checkbox"]:checked {
     background-color: var(--btn-color);
     outline: none;
 }
 
-.emojiBx{
+.emojiBx {
     background-color: var(--white);
     border: 2px solid var(--bg-container);
     height: 90px;
@@ -111,17 +111,15 @@ input[type="checkbox"]:checked{
     color: var(--emojiColor);
 }
 
-.emojiBx.active{
-    /* box-shadow: var(--btn-color) 0px 4px 0px 0px; */
+.emojiBx.active {
     border-bottom: 5px solid var(--btn-color);
 }
 
-.emojiBx:hover{
+.emojiBx:hover {
     box-shadow: var(--btn-color) 0px 7px 20px 0px;
 }
 
-
-input[type="checkbox"]::after{
+input[type="checkbox"]::after {
     content: "\f00c";
     font-family: "Font Awesome 5 Free", sans-serif;
     font-weight: 900;
@@ -130,49 +128,44 @@ input[type="checkbox"]::after{
     color: var(--white);
 }
 
-input[type="checkbox"]:checked::after{
+input[type="checkbox"]:checked::after {
     display: block;
 }
 
-
-.buttons{
+.buttons {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.submit{
+.submit {
     background-color: var(--btn-color);
     color: var(--white);
     margin: 10px;
 }
 
-.cancel{
+.cancel {
     background-color: var(--white);
 }
 
-textarea{
+textarea {
     resize: none;
     font-size: 1rem;
     padding: 12px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.feedbacks{
+.feedbacks {
     display: flex;
     align-items: center;
 }
 
-box-icon{
+box-icon {
     margin: 10px;
     color: var(--emojiColor);
 }
 
-box-icon:hover{
-   
-}
-
-:root{
+:root {
     --bg-color: #f4f7ff;
     --btn-color: #fe72a4;
     --container-color: #f9fafe;
