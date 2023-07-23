@@ -25,11 +25,13 @@ body{
 }
 
 .container{
-    min-height: 700px;
     background-color: var(--container-color);
     padding: 80px;
     border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 h1{
