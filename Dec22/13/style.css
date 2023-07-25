@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .firstDiv{
@@ -15,7 +17,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .secondDiv{
@@ -29,6 +30,34 @@
     position: absolute;
     border-radius: 30px;
 }
+
+.secondDiv h1{
+    font-size: 2rem;
+    color: var(--white);
+    /* font-weight: 600; */
+}
+
+.secondDiv p{
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.inputBx input[type="email"]{
+    width: 500px;
+    background-color: transparent;
+    border: 3px solid var(--white) ;
+    padding: 15px;
+    border-radius: 80px;
+    position: relative;
+}
+
+.inputBx input[type="button"]{
+    width: 50px;
+    height: 50px;
+    background-color: var(--white);
+    content: "f061";
+}
+
 
 .profiles{
     position: absolute;
