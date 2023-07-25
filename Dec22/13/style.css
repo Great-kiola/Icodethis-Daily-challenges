@@ -9,3 +9,19 @@ body{
     line-height: 1.5;
     min-height: 100vh;
 }
+
+/* .users{
+    margin-right: 5px;
+}
+
+.users img{
+    border-radius: 50%;
+    border: 3px solid #000;
+
+} */
+
+:root{
+    --Dark-blue: #2143be;
+    --LightBlue: #4e6ede;
+    --SubtleBlue: #dde6fa;
+}
