@@ -9,8 +9,8 @@
 
 .firstDiv{
     background-color: var(--SubtleBlue);
-    width: 65%;
-    height: 400px;
+    width: 1000px;
+    height: 450px;
     padding: 25px;
     border-radius: 30px;
     position: relative;
@@ -22,7 +22,7 @@
 .secondDiv{
     background: linear-gradient(0.25turn,  var(--LightBlue), var(--Dark-blue));
     width: 95%;
-    height: 350px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,22 +42,40 @@
     color: var(--white);
 }
 
+.inputBx{
+    position: relative;
+}
+
 .inputBx input[type="email"]{
     width: 500px;
-    background-color: transparent;
-    border: 3px solid var(--white) ;
+    height: 65px;
+    background-color: var(--input);
+    border: 3px solid rgba(255, 255, 255, 0.2) ;
     padding: 15px;
     border-radius: 80px;
-    position: relative;
+}
+
+.inputBx input[type="email"]::placeholder{
+    color: var(--white);
+    opacity: 50%;
+}
+
+.inputBx input[type="email"]:focus{
+    outline: none;
+    color: var(--white);
 }
 
 .inputBx input[type="button"]{
     width: 50px;
     height: 50px;
     background-color: var(--white);
-    content: "f061";
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    cursor: pointer;
+    /* content: "f061"; */
 }
-
 
 .profiles{
     position: absolute;
@@ -75,7 +93,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90px;
+    width: 85px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 10px;
 
 }
@@ -85,4 +103,5 @@
     --LightBlue: #4e6ede;
     --SubtleBlue: #dde6fa;
     --white: #fff;
+    --input: #8699e5;
 }
