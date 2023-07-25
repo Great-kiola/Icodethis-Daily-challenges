@@ -10,7 +10,7 @@
 .firstDiv{
     background-color: var(--SubtleBlue);
     width: 1000px;
-    height: 450px;
+    height: 400px;
     padding: 25px;
     border-radius: 30px;
     position: relative;
@@ -22,7 +22,7 @@
 .secondDiv{
     background: linear-gradient(0.25turn,  var(--LightBlue), var(--Dark-blue));
     width: 95%;
-    height: 400px;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +34,6 @@
 .secondDiv h1{
     font-size: 2rem;
     color: var(--white);
-    /* font-weight: 600; */
 }
 
 .secondDiv p{
@@ -53,6 +52,7 @@
     border: 3px solid rgba(255, 255, 255, 0.2) ;
     padding: 15px;
     border-radius: 80px;
+    padding-left: 25px;
 }
 
 .inputBx input[type="email"]::placeholder{
@@ -70,11 +70,21 @@
     height: 50px;
     background-color: var(--white);
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn{
     position: absolute;
     top: 7px;
     right: 10px;
-    cursor: pointer;
-    /* content: "f061"; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn i{
+    position: absolute;
+    color: var(--input);
 }
 
 .profiles{
@@ -84,7 +94,6 @@
 
 .users{
     margin-right: 45px;
-    
 }
 
 .users img{
@@ -93,9 +102,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 85px;
+    width: 95px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 10px;
-
 }
 
 :root{
