@@ -10,3 +10,9 @@ body{
     min-height: 100vh;
 }
 
+:root{
+    --profileColor: #4c70d6;
+    --btnColor: #628dff;
+    --focusColor: #2474f8;
+    --bgColor: #f7fbfe;
+}
