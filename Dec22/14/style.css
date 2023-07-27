@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 *{
     margin: 0;
@@ -12,30 +13,79 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.profile{
+    display: flex;
+    padding: 30px;
+    background-color: var(--profileColor);
+    border-radius: 10px 10px 0px 50px;
+    color: var(--bgColor);
+}
+
+.profile img{
+    border-radius: 50%;
+    width: 70px;
+    margin-right: 20px;
+}
+
+h1{
+    font-weight: 700;
+}
+
+.profile .title p{  
+    font-weight: 400;
+    font-size: .8rem;
+    color: #d3d3d389;
 }
 
 .container{
-    width: 350px;
-    height: 500px;
+    width: 290px;
+    min-height: 600px;
     background-color: var(--bgColor);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 30px;
+    border-radius: 10px;
+}
+
+.menus{
+    margin: 0px 5px;
+    padding: 10px 0px;
 }
 
 .dashboard{
     display: flex;
     align-items: center;
-    margin: 15px 0px; 
-    /* justify-content: center; */
+    margin: 5px auto; 
+    cursor: pointer;
+    padding: 20px;
+}
+
+.dashboard:hover{
+    color: var(--focusColor);
+    /* background-color: var(--focusColor2); */
+    box-shadow: -5px 0px 0px 0px var(--focusColor)
 }
 
 .dashboard i{
     margin-right: 20px;
 }
 
+input[type="button"]{
+    background-color: var(--btnColor);
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;
+    cursor: pointer;
+    display: flex;
+}
+
+
 :root{
     --profileColor: #4c70d6;
     --btnColor: #628dff;
     --focusColor: #2474f8;
+    --focusColor2: #2579ff11;
     --bgColor: #f7fbfe;
 }
