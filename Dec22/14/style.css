@@ -9,10 +9,28 @@ body{
     line-height: 1.5;
     min-height: 100vh;
     background-color: var(--bgColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container{
-    background-color: var(--btnColor);
+    width: 350px;
+    height: 500px;
+    background-color: var(--bgColor);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+}
+
+.dashboard{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px; 
+    /* justify-content: center; */
+}
+
+.dashboard i{
+    margin-right: 20px;
 }
 
 :root{
