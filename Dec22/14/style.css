@@ -77,16 +77,19 @@ h1{
     margin: 5px auto; 
     cursor: pointer;
     padding: 20px;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .dashboard:hover{
     color: var(--focusColor);
-    /* background-color: var(--focusColor2); */
-    box-shadow: -5px 0px 0px 0px var(--focusColor)
+    box-shadow: -5px 0px 0px 0px var(--focusColor);
 }
 
 .dashboard i{
     margin-right: 20px;
+    color: var(--iconColor);
+    font-size: 23px;
 }
 
 input[type="button"]{
@@ -106,4 +109,6 @@ input[type="button"]{
     --focusColor: #2474f8;
     --focusColor2: #2579ff11;
     --bgColor: #f7fbfe;
+    --iconColor: #bcbcbc;
+
 }
