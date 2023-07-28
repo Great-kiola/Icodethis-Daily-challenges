@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,51 +15,50 @@
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <div class="profile">
+    <main class="container">
+        <div class="profile">
+            <img src="./Jess.jpg" alt="Jessica profile image" />
 
-                <img src="./Jess.jpg" alt="Jessica profile image">
+            <div class="title">
+                <h1>Dr. Jessica James</h1>
+                <p>Dermatologist</p>
+            </div>
+        </div>
+        <div class="btn">
+            <input type="button" value="Add Branch" />
 
-                <div class="title">
-                    <h1>Dr. Jessica James</h1>
-                    <p>Dermatologist</p>
-                </div>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+
+        <div class="menus">
+            <div class="dashboard">
+                <i class="fa-solid fa-chart-pie"></i>
+                <p>Dashboard</p>
             </div>
 
-            <div class="btn">
-                <input type="button" value="Add Branch">
-                <i class="fa-solid fa-plus"></i>
+            <div class="dashboard">
+                <i class="fa-solid fa-table-columns"></i>
+                <p>Post Sessions</p>
             </div>
 
-            <div class="menus">
-                <div class="dashboard">
-                    <i class="fa-solid fa-chart-pie"></i>
-                    <p>Dashboard</p>
-                </div>
+            <div class="dashboard">
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <p>Live sessions</p>
+            </div>
 
-                <div class="dashboard">
-                    <i class="fa-solid fa-table-columns"></i>
-                    <p>Post Sessions</p>
-                </div>
+            <div class="dashboard">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <p>Messages</p>
+            </div>
 
-                <div class="dashboard">
-                    <i class="fa-solid fa-bolt-lightning"></i>
-                    <p>Live sessions</p>
-                </div>
-
-                <div class="dashboard">
-                    <i class="fa-solid fa-envelope-open-text"></i>
-                    <p>Messages</p>
-                </div>
-
-                <div class="dashboard">
-                    <i class="fa-solid fa-heart"></i>
-                    <p>Locum library</p>
-                </div>
+            <div class="dashboard">
+                <i class="fa-solid fa-heart"></i>
+                <p>Locum library</p>
             </div>
         </div>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

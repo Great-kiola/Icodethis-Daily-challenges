@@ -20,11 +20,11 @@ body{
     display: flex;
     padding: 30px;
     background-color: var(--profileColor);
-    border-radius: 10px 10px 0px 50px;
     color: var(--bgColor);
     position: relative;
     width: 100%;
-    margin-bottom: 40px;
+    border-radius: 10px 10px 0px 50px;
+    margin-bottom: 70px;
 }
 
 .profile::after{
@@ -36,10 +36,9 @@ body{
     background: inherit;
     top: 0;
     right: 0;
-    bottom: 0;
-    left: 0;
     transform-origin: top right;
-    transform: skewY(-4deg);
+    transform: skewY(-5deg);
+    border-radius: 10px 10px 0px 50px;
 }
 
 .profile img{
@@ -95,14 +94,8 @@ h1{
     font-size: 1.1rem;
 }
 
-.dashboard:hover{
-    color: var(--focusColor);
-    box-shadow: -5px 0px 0px 0px var(--focusColor);
-}
-
 .dashboard i{
     margin: 0px 35px 0px 25px;
-    color: var(--iconColor);
     font-size: 23px;
 }
 
@@ -136,6 +129,10 @@ h1{
     background-color: var(--focusColor);
 }
 
+.menus .active{
+    box-shadow: -5px 0px 0px 0px var(--focusColor);
+    color: var(--focusColor);
+}
 
 :root{
     --profileColor: #4c70d6;
