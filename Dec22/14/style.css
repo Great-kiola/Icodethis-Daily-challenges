@@ -24,6 +24,7 @@ body{
     color: var(--bgColor);
     position: relative;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .profile::after{
@@ -107,13 +108,16 @@ h1{
 
 .btn{
     position: relative;
-    margin: 20px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn i{
     position: absolute;
     top: 17px;
-    left: 100px;
+    left: 120px;
     color: var(--bgColor);
 }
 
@@ -122,11 +126,14 @@ h1{
     color: #fff;
     padding: 15px 70px;
     border-radius: 8px;
-    margin: 20px auto;
     cursor: pointer;
     display: flex;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     width: 200px;
+}
+
+.btn input[type="button"]:hover{
+    background-color: var(--focusColor);
 }
 
 
