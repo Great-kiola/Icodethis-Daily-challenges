@@ -7,4 +7,13 @@
 body{
     line-height: 1.5;
     min-height: 100vh;
+    background-color: var(--bgColor);
+}
+
+:root{
+    --winBar: #5b5be6;
+    --contColor: #ffffff;
+    --shareColor: #ff5d78;
+    --contColor: #ffffff;
+    --bgColor: #fcfbff;
 }
