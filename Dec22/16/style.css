@@ -20,7 +20,7 @@ body{
 .container{
     background-color: var(--contColor);
     width: 600px;
-    height: 500px;
+    min-height: 500px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     /* padding: 30px; */
 }
@@ -52,12 +52,23 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: var(--margin);
+    margin: 0px -10px;
     background-color: var(--winBar);
-    width: 100%;
+    width: 620px;
     padding: 25px;
     color: var(--bgColor);
     font-size: 1.3rem;
+}
+
+.Newplace{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: var(--margin);
+    width: 100%;
+    padding: 25px;
+    color: var(--black);
+    font-size: 1.3rem; 
 }
 
 .position{
@@ -85,6 +96,7 @@ body{
     --shareColor: #ff5d78;
     --contColor: #ffffff;
     --bgColor: #fcfbff;
-    --margin: 20px auto;
+    --margin: 7px auto;
     --padding: 25px;
+    --black: #000;
 }
