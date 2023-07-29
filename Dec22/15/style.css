@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bgColor);
+}
+
+.container{
+    width: 900px;
+    height: 600px;
+    padding: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--label);
+    margin-bottom: var(--mb);
+    text-transform: capitalize;
+}
+
+.firstContainer {
+    display: flex;
+    align-items: baseline;
+    width: 250px;
+    height: 100%;
+    padding: 25px 0px;
+}
+
+.secondContainer{
+    width: 400px;
+    height: 100%;
+    padding: 25px 0px;
+}
+
+.shipping{
+    background-color: var(--label);
+    width: 120px;
+    color: var(--white);
+    border-radius: 100px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: var(--mb);
+    font-size: .9rem;
+}
+
+.btn input[type="button"]{
+    background-color: var(--btnColor);
+    color: var(--white);
+    width: 100%;
+    padding: 15px;
+    border-bottom: 7px solid var(--baseBtnColor);
+    border-radius: 10px;
+    margin-bottom: var(--mb);
+    cursor: pointer;
+}
+
+.btn input[type="button"]:active{
+    transform: scale(0.9);
+}
+
+
+.pricing .sale{
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+.pricing .newPrice{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.pricing .dateValid{
+    font-size: .8rem;
+} 
+
+.validStock{
+    display: flex;
+    align-items: center;
+}
+
+.validStock p{
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+
+.validStock .green{
+    width: 10px;
+    height: 10px;
+    background-color: var(--greenGlow);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+}
+
+.actions .addCart, .wishlist{
+    border: 1px solid var(--label);
+    padding: 20px;
+    width: 50%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.actions .addCart svg, .actions .wishlist svg{
+    margin-right: 10px;
+}
+
+.actions .addCart:hover, .actions .wishlist:hover{
+    background-color: var(--btnColor);
+    color: var(--white);
+    border: none;
+}
+
+.actions .addCart{
+    margin-right: 15px;
+}
+
+:root{
+    --btnColor: #4888eb;
+    --baseBtnColor: #3265e3;
+    --greenGlow: #03d98e;
+    --label: #1b1a4e;
+    --white: #fff;
+    --mb: 15px;
+    --bgColor: #eff2fa;
+}
