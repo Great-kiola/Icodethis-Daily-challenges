@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
     margin: 0;
@@ -12,21 +13,70 @@ body{
     background-color: var(--bgColor);
     display: grid;
     place-items: center;
-    font-family: 'Rubik', sans-serif;
+    /* font-family: 'Rubik', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .container{
     background-color: var(--contColor);
-    width: 300px;
-    height: 300px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-    padding: 30px;
+    width: 600px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    /* padding: 30px; */
+}
+
+.ranking h1{
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .ranking{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: var(--padding);
+}
+
+.ranking .iconSvg{
+    background-color: var(--shareColor);
+    padding: 20px;
+    width: 80px;
+    border-radius: 20px;
+    color: var(--bgColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstplace{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: var(--margin);
+    background-color: var(--winBar);
+    width: 100%;
+    padding: 25px;
+    color: var(--bgColor);
+    font-size: 1.3rem;
+}
+
+.position{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.position .medal img{
+    width: 35px;
 }
 
 :root{
@@ -35,4 +85,6 @@ body{
     --shareColor: #ff5d78;
     --contColor: #ffffff;
     --bgColor: #fcfbff;
+    --margin: 20px auto;
+    --padding: 25px;
 }
