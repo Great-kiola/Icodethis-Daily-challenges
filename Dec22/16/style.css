@@ -8,6 +8,17 @@ body{
     line-height: 1.5;
     min-height: 100vh;
     background-color: var(--bgColor);
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    background-color: var(--contColor);
+    width: 300px;
+    height: 300px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
 }
 
 :root{
