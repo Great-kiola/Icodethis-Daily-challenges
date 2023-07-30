@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: 'DM Sans', sans-serif;         
+}
+
+h1{
+    font-family: 'Noto Serif Vithkuqi', serif;   
+}
+
+:root{
+    --bgColor: #3a4e7b;
+    --contColor: #1e3161;
+    --white: #fff;
+    --links: #1e3161;
+}
