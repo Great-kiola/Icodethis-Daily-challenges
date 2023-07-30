@@ -8,10 +8,14 @@ body{
     line-height: 1.5;
     min-height: 100vh;
     background-color: var(--bgColor);
+    display: grid;
+    place-items: center;
 }
 
 .container{
     background-color: var(--white);
+    width: 200px;
+    height: 650px;
 
 }
 
