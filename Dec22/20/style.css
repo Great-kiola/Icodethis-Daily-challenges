@@ -7,4 +7,16 @@
 body{
     line-height: 1.5;
     min-height: 100vh;
+    background-color: var(--bgColor);
+}
+
+.container{
+    background-color: var(--white);
+
+}
+
+:root{
+    --white: #fff;
+    --bgColor: #f18bb2;
+    --button: linear-gradient(#e76ed0, #fd6aa7);
 }
