@@ -12,10 +12,44 @@ body{
     line-height: 1.5;
     min-height: 100vh;
     font-family: 'DM Sans', sans-serif;         
+    background: var(--bgColor);
+    display: grid;
+    place-items: center;
+    color: var(--white);
+}
+
+.container{
+    background: var(--contColor);
+    width: 1200px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+.box{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
 }
 
 h1{
     font-family: 'Noto Serif Vithkuqi', serif;   
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+}
+
+.socialDiv svg{
+    width: 50px;
+    height: 50px;
+    margin: 0px 25px;
 }
 
 :root{
