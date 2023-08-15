@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: 'Overpass', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bgColor);
+    font-size: 1.24rem;
+}
+
+.wrapper{
+    width: 750px;
+    background-color: var(--numberColumn);
+    /* border-radius: 20px; */
+}
+
+.wrapper header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calender ul{
+    display: flex;
+    list-style: none;
+    color: var(--white);
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+}
+
+.calender ul li{
+    width: calc(100% / 7);
+    margin: 20px 20px;
+}
+
+:root{
+    --numberColumn: #210f63;
+    --taskColumn: #1c0a59ff;
+    --bgColor: #150a42;
+    --btnColor: #dd16efff;
+    --white: #fff;
+}
