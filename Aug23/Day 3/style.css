@@ -20,10 +20,30 @@ body{
     flex-direction: column;
 }
 
+.input{
+    position: relative;
+}
+
 #SearchBox{
-    width: 250px;
-    height: 200px;
-    
+    width: 350px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--btnColor);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.btn{
+    background-color: var(--white);
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+
 }
 
 .icons{
