@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 body{
@@ -70,6 +73,57 @@ body{
 .history:hover, .awards:hover, .ideas:hover{
     background-color: var(--btnColor);
     color: var(--white);
+}
+
+.sortBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 200px;
+    cursor: pointer;
+    background-color: var(--white);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+}
+
+.sortOptions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    /* transition: all 0.5s; */
+}
+
+.show{
+    display: none;
+    height: 500%;
+}
+
+/* .show{
+    display: none;
+} */
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    list-style: none;
+    font-weight: 700;
+}
+
+.sortOptions ul li:hover{
+    background-color: aliceblue;
+    padding: 20px;
 }
 
 :root{
