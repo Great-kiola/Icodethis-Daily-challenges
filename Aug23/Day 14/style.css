@@ -19,6 +19,8 @@ body{
 .wrapper{
     max-width: 750px;
     background-color: var(--numberColumn);
+    height: 700px;
+    padding: 30px;
 }
 
 .wrapper header{
@@ -42,6 +44,47 @@ body{
 
 .inActive{
     opacity: 25%;
+}
+
+.wrapper2{
+    background-color: var(--taskColumn);
+    width: 350px;
+    height: 700px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 15%;
+    color: var(--white);
+}
+
+.icons h2{
+    font-size: 1.2rem;
+}
+
+.icons svg{
+    width: 130px;
+}
+
+.wrapper2 .btnClass .btn{
+    width: 250px;
+    padding: 20px;
+    background: var(--btnColor);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 .calender ul{
