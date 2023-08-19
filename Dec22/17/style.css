@@ -1,14 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
     line-height: 1.5;
     min-height: 100vh;
+    background: var(--gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    width: 450px;
+    background: linear-gradient(40deg,#22abffff, #0e8efcff);
+    padding: 50px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.head{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--white);
+}
+
+.heading h1{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.heading p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.container .head svg{
+    width: 35px;
+}
+
+.bottleDiv{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottleDiv .bottle{
+    width: 250px ;
+}
+
+.Drink{
+    width: 300px;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(360deg ,#b8e2fb, #edf5fd);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.circles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.c1{
+    width: calc(40%/ 5);
+    height: 30px;
+    border-radius: 100%;
+    background: #0995f1;
+}
+
+.circles .big{
+    width: 10px;
+    height: 10px;
+}
+
+.circles .inactive{
+    background-color: var(--grey) !important;
+}
+
+.streak{
+    width: 450px;
+    height: 200px;
+    background-color: var(--white);
+    padding: 35px;
+}
+
+.bottleBtnDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.streak h1{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.days ul{
+    width: 420px;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.days ul li{
+    margin-top: 20px;
+    width: calc(100% / 7);
 }
 
 :root{
-    --gradient: linear-gradient(#049ce6, #0995f1);
+    --gradient: linear-gradient(90deg ,#049ce6, #0995f1);
+    --white: #fff;
+    --grey: #d1d9dbff;
 }
