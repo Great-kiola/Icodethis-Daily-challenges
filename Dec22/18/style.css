@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgColor);
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    background: var(--white);
+    box-shadow: #ff9953 0px 50px 75px -10px;
+    padding: 30px;
+    z-index: 1;
+}
+
+.circle{
+    position: relative;
+}
+
+.circle::before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -430px;
+    right: -50px;
+    border-radius: 500px;
+    background: var(--gradient);
+}
+
+.circle::after{
+    content: "";
+    width: 280px;
+    height: 300px;
+    position: absolute;
+    top: -50px;
+    left: -40px;
+    border-radius: 700px;
+    background: var(--gradient);
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading h1{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.users{
+    margin: 30px auto;
+}
+
+.user1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.userDetails{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn{
+    width: 100px;
+    padding: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: none;
+    text-transform: capitalize;
+    font-weight: 400;
+    background: var(--white);
+}
+
+.userDetails img{
+    width: 70px;
+    border-radius: 100%;
+}
+
+.userDetails h1{
+    font-size: 1.2rem;
+}
+
+:root{
+    --bgColor: #f8f6f7;
+    --white: #fff;
+    --gradient: linear-gradient(#ff9953, #ff7974);
+}
