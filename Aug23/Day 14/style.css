@@ -21,7 +21,7 @@ body{
     max-width: 750px;
     background-color: var(--numberColumn);
     height: 700px;
-    padding: 30px;
+    padding: 35px;
 }
 
 .wrapper header{
@@ -75,6 +75,15 @@ body{
     width: 130px;
 }
 
+.weeks{
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.heading{
+    text-align: center;
+}
+
 .wrapper2 .btnClass .btn{
     width: 250px;
     padding: 20px;
@@ -93,13 +102,12 @@ body{
     list-style: none;
     color: var(--white);
     flex-wrap: wrap;
-    padding: 20px;
     text-align: center;
 }
 
 .calender ul li{
     width: calc(100% / 7);
-    padding: 20px;
+    margin: 20px auto;
 }
 
 :root{
