@@ -8,3 +8,7 @@ body{
     line-height: 1.5;
     min-height: 100vh;
 }
+
+:root{
+    --gradient: linear-gradient(#049ce6, #0995f1);
+}
