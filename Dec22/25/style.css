@@ -24,28 +24,35 @@ body{
 
 .cont1{
     width: 50%;
-}
-
-.icons{
-    width: 200px;
     display: flex;
-    background: var(--white);
+    gap: 20px;
+    flex-direction: column;
 }
-
-.cont1 img{
-    width: 25px;
+.cont1 .icons img{
+    width: 35px;
+    margin-right: 10px;
 }
 
 .line{
     width: 500px;
     background-color: var(--lineColor);
     height: 10px;
-    border-radius: 10px;    
+    border-radius: 10px;
+    position: relative;    
 }
-column-reversecolumncolumn-reverse
+
+.line::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    background-color: var(--lineBefore);
+    height: 10px;
+
+}
+
 img{
     border-radius: 30%;
-    width: 90px;
+    width: 150px;
 }
 
 :root{
