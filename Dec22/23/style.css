@@ -1,15 +1,108 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
     line-height: 1.5;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgColor);
 }
 
 .container{
-    width: 250px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.card{
+    width: 350px;
+    background-color: var(--white);
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.imgDiv{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.imgDiv img{
+    width: 45px;
+    border-radius: 100%;
+}
+
+.icon{
+    cursor: pointer;
+    width: 60px;
+}
+
+.userDetails h1{
+    font-size: 1.2rem;
+}
+
+.userDetails p{
+    font-size: .8rem !important;
+}
+
+.card p{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.dots{
+    width: 9px;
+    height: 9px;
+    background: var(--dotColor);
+    position: relative;
+    top: 20px;
+    right: 0;
+    border-radius: 50%;
+}
+
+.dots::after{
+    content: "";
+    position: absolute;
+    width: 8.5px;
+    height: 8.5px;
+    outline: 1px solid var(--dotColor);
+    top: 0px;
+    right: 15px;
+    border-radius: 50%;
+}
+
+.dots::before{
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background:  var(--dotColor);
+    top: 0px;
+    left: 15px;
+    border-radius: 50%;
+}
+
+:root{
+    --white: #fff;
+    --bgColor: #f5f8ff;
+    --dotColor: #97999cff;
 }
