@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    display: grid;
+    place-content: center;
+}
+
+.container{
+
+}
+
+#free{
+    background: var(--btnColor1);
+    padding: 15px;
+    border-radius: 10px;
+    width: 130px;
+}
+
+:root{
+    --btnColor1:#e4bffb;
+    --btnColor2: #b0f2f5;
+    --btnColor3: #ffddb7;
+    --white: #fff;
+}
