@@ -21,12 +21,55 @@ body{
     gap: 60px;
     padding: 80px;
     border-radius: 20px;
+    outline: 15px solid var(--white);
 }
 
 .plans{
     display: flex;
     gap: 35px;
     flex-direction: column;
+}
+
+.free::before {
+    content: "";
+    width: 35rem;
+    height: 35rem;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(237, 187, 255, 0.7);
+    position: absolute;
+    top: 14rem;
+    right: 9rem;
+    filter: blur(80px);
+    z-index: -1;
+}
+
+.standard::after {
+    content: "";
+    width: 35rem;
+    height: 35rem;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(174, 241, 245, 0.7);
+    position: absolute;
+    top: 20rem;
+    left: 15rem;
+    filter: blur(70px);
+    z-index: -1;
+}
+
+.premium::after {
+    content: "";
+    width: 35rem;
+    height: 35rem;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(255, 221, 182, 0.7);
+    position: absolute;
+    bottom: 14rem;
+    left: -9rem;
+    filter: blur(80px);
+    z-index: -1;
 }
 
 .planPrice h2{
