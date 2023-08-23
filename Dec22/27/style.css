@@ -18,15 +18,15 @@ body{
     background: rgba(255, 255, 255, 0.452);
     display: flex;
     align-items: center;
-    gap: 60px;
-    padding: 80px;
+    gap: 40px;
+    padding: 65px;
     border-radius: 20px;
     outline: 15px solid var(--white);
 }
 
 .plans{
     display: flex;
-    gap: 35px;
+    gap: 15px;
     flex-direction: column;
 }
 
@@ -101,6 +101,10 @@ body{
     padding: 15px;
 }
 
+hr{
+    display: none;
+}
+
 #Standard{
     background-color: var(--btnColor2);
 }
@@ -119,4 +123,23 @@ body{
     --btnColor3: #ffddb7;
     --white: #fff;
     --bgColor: #f5f8ff;
+}
+
+@media (max-width: 600px) {
+    
+    .container{
+        min-width: 200px;
+        display: block;
+        text-align: center;
+    }
+
+    .plans{
+        margin-bottom: 25px;
+    }
+
+    hr{
+        display: block;
+        margin-bottom: 10px;
+    }
+    
 }
