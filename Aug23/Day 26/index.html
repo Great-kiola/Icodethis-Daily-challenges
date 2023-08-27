@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Day 26</title>
 </head>
 <body>
@@ -11,8 +12,27 @@
             <h1>Check In</h1>
 
             <div class="inputDiv">
-                <div class="icon"></div>
+                
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                        <path d="M21 21l-6 -6"></path>
+                    </svg>
+                </div>
                 <input type="search" placeholder="Search Location">
+
+                <div class="details">
+                    <img src="./map.png" alt="Maps">
+                    <div class="texts">
+                        <h2>See places near you</h2>
+                        <p>You have turned off your location. To see a list of places near you, allow us to
+                            access your location while you use your app.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="btn">Turn on location</button>
             </div>
         </div>
     </main>
