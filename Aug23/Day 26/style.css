@@ -13,27 +13,24 @@ body{
     justify-content: center;
 }
 
-.container{
-    width: 800px;
+.details{
+    text-align: center;
 }
 
 .details img{
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.texts {
-    text-align: center;
+    width: 150px;
 }
 
 .cont1{
     background-color: var(--contColor1);
-    width: 500px;
+    width: 450px;
     border-radius: 10px;
     padding: 30px;
-    text-align: center;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
 }
 
 .btn{
@@ -51,9 +48,34 @@ body{
     justify-content: center;
 }
 
+.inputDiv{
+    position: relative;
+}
+
+input[type="search"] {
+    width: 100%;
+    padding: 25px 55px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--inputColor);
+}
+
+.icon svg{
+    position: absolute;
+    top: 23px;
+    left: 20px;
+    color: var(--placeholderColor);
+}
+
+::placeholder{
+    color: var(--placeholderColor);
+}
+
 :root{
     --bgColor: #f5f5f5;
     --contColor1: #3b4c7d;
     --btnColor: #2ebfff;
     --contColor2: #ffffff;
+    --inputColor: #344674;
+    --placeholderColor: #586a98ff;
 }
