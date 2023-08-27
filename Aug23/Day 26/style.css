@@ -16,3 +16,9 @@ body{
     --btnColor: #2ebfff;
     --contColor2: #ffffff;
 }
+
+.container{
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
