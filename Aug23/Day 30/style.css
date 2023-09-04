@@ -7,6 +7,35 @@
 body{
     line-height: 1.5;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgColor);
+}
+
+.first{
+    background-color: var(--firstDivCol);
+    width: 450px;
+    height: 800px;
+}
+
+.adressBook{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: #5223a4 0px 25px 45px;
+}
+
+
+.adressBook .address{
+    height: 100%;
+    background: var(--iconCol2);
+}
+
+
+.adressBook svg{
+    color: var(--iconCol);
+    margin: 30px;
 }
 
 :root{
@@ -15,4 +44,5 @@ body{
     --iconCol: #cfb9fb;
     --iconCol2: #a685e0;
     --notificationCol: #fe4181;
-}
+    --bgColor: #f0def9;
+}   
