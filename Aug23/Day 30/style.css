@@ -21,8 +21,8 @@ body{
 
 .first{
     background-color: var(--firstDivCol);
-    width: 500px;
-    height: 885px;
+    width: 430px;
+    height: 830px;
     position: relative;
 }
 
@@ -72,7 +72,6 @@ body{
     background-color: #361d63;
 }
 
-
 .adressBook svg{
     color: var(--iconCol);
     margin: 30px;
@@ -81,9 +80,7 @@ body{
 .user1{
     display: flex;
     align-items: center;
-    gap: 25px;
     padding: 20px 25px;
-    /* margin: 20px; */
     width: 100%;
     cursor: pointer;
 }
@@ -97,23 +94,26 @@ body{
 }
 
 .user1 img{
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
+    margin-right: 10px;
     border: 8px solid var(--iconCol2);
 }
 
 .user1 h1{
-    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-size: 1rem;
 }
 
 .user1 p{
-    width: 270px;
-    font-size: .9rem;
+    margin-right: 10px;
+    width: 250px;
+    font-size: .8rem;
 }
 
 .time h2{
-    font-size: 1rem;
+    font-size: .8rem;
     color: var(--iconCol);
     opacity: 50%;
 }
