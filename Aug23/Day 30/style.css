@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -13,10 +14,44 @@ body{
     background-color: var(--bgColor);
 }
 
+.container{
+    display: flex;
+    align-items: center;
+}
+
 .first{
     background-color: var(--firstDivCol);
-    width: 450px;
-    height: 800px;
+    width: 500px;
+    height: 885px;
+    position: relative;
+}
+
+.edit{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 50px;
+    right: 35px;
+    background-color: var(--SecondDivCol);
+    border-radius: 100%;
+    z-index: 1;
+    box-shadow: #5223a4 10px 25px 45px;
+    cursor: pointer;
+}
+
+.edit:hover{
+    background-color: #5223a4;
+}
+
+.edit:hover svg{
+    color: #fff;
+}
+
+.edit svg{
+    color: var(--iconCol2);
 }
 
 .adressBook{
@@ -24,18 +59,69 @@ body{
     display: flex;
     justify-content: space-between;
     box-shadow: #5223a4 0px 25px 45px;
+    border-bottom: 2px solid var(--iconCol2);
 }
-
 
 .adressBook .address{
     height: 100%;
     background: var(--iconCol2);
+    cursor: pointer;
+}
+
+.adressBook .address:hover{
+    background-color: #361d63;
 }
 
 
 .adressBook svg{
     color: var(--iconCol);
     margin: 30px;
+}
+
+.user1{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px 25px;
+    /* margin: 20px; */
+    width: 100%;
+    cursor: pointer;
+}
+
+.user1:hover{
+    background-color: var(--hoverCol);
+}
+
+.users{
+    color: var(--SecondDivCol);
+}
+
+.user1 img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    border: 8px solid var(--iconCol2);
+}
+
+.user1 h1{
+    font-size: 1.2rem;
+}
+
+.user1 p{
+    width: 270px;
+    font-size: .9rem;
+}
+
+.time h2{
+    font-size: 1rem;
+    color: var(--iconCol);
+    opacity: 50%;
+}
+
+.second{
+    width: 650px;
+    height: 720px;
+    background-color: var(--SecondDivCol);
 }
 
 :root{
@@ -45,4 +131,5 @@ body{
     --iconCol2: #a685e0;
     --notificationCol: #fe4181;
     --bgColor: #f0def9;
+    --hoverCol: #5f39a3;
 }   
