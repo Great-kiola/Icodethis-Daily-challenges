@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--bgColor);
+}
+
+.container{
+    background-color: var(--white);
+    width: 500px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container h1{
+    font-size: 1.5rem;
+}
+
+.bio h2{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.bio p{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.userDetails{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.userDetails img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.passDiv h2{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.inputDiv{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icon-tabler-lock{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.inputDiv input{
+    width: 400px;
+    padding: 20px 45px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.toogleDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    width: 120px;
+    padding: 15px;
+    background-color: var(--btnColor);
+    color: var(--white);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--btnColor);
+    font-weight: 700;
+}
+
+a{
+    color: var(--btnColor);
+}
+
+:root{
+    --bgColor: #f6f8faff;
+    --btnColor: #142b51;
+    --white: #fff;
+}
