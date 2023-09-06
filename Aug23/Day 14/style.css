@@ -18,9 +18,9 @@ body{
 }
 
 .wrapper{
-    max-width: 750px;
+    width: 600px;
     background-color: var(--numberColumn);
-    height: 700px;
+    height: 650px;
     padding: 35px;
 }
 
@@ -50,8 +50,8 @@ body{
 .wrapper2{
     background-color: var(--taskColumn);
     width: 350px;
-    height: 700px;
-    padding: 30px;
+    height: 650px;
+    padding: 65px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -85,12 +85,12 @@ body{
 }
 
 .wrapper2 .btnClass .btn{
-    width: 250px;
+    width: 150px;
     padding: 20px;
     background: var(--btnColor);
     color: var(--white);
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: .8rem;
     border-radius: 50px;
     cursor: pointer;
     border: none;
@@ -107,7 +107,24 @@ body{
 
 .calender ul li{
     width: calc(100% / 7);
-    margin: 20px auto;
+    margin: 7px auto;
+}
+
+.days li{
+    padding: 20px 0px;
+    border-radius: 10px;
+
+}
+
+.wrapper2 .heading h1{
+    font-size: .9rem;
+    letter-spacing: 8px;
+}
+
+.wrapper2 .heading p{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-weight: 700;
 }
 
 :root{
