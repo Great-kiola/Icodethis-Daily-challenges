@@ -10,7 +10,6 @@ let months = ["January", "Febuary", "March", "April", "May", "June", "July", "Au
 
 function renderCal() {
     currentDate.innerText = `${months[currMonth]} ${currYear}`
-
 }
 
 renderCal();
