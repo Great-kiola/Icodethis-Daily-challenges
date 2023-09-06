@@ -1,4 +1,5 @@
 let currentDate = document.querySelector('.currDay');
+let currentDate2 = document.querySelector('.currDay2');
 let daysTag = document.querySelector('.days');
 let iconLeftRight = document.querySelectorAll('.nav');
 // iconRight = document.querySelector('.right');
@@ -21,6 +22,8 @@ function renderCal() {
 
     currentDate.innerText = `${months[currMonth]} ${currYear}`
     daysTag.innerHTML = liTag;
+
+    currentDate2.innerText = `${months[currMonth]}`
 }
 
 renderCal();
@@ -31,4 +34,7 @@ iconLeftRight.forEach(icon => {
         currMonth = icon.id === "prev" ? currMonth -1  : currMonth + 1;
         renderCal();
     });
-})
+});
+
+
+currentDate2
