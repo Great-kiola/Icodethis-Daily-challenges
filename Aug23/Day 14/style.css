@@ -107,7 +107,7 @@ body{
 
 .calender ul li{
     width: calc(100% / 7);
-    margin: 7px auto;
+    margin: 7px 0px;
 }
 
 .days li{

@@ -1,5 +1,7 @@
 let currentDate = document.querySelector('.currDay');
 let daysTag = document.querySelector('.days');
+let iconLeftRight = document.querySelectorAll('.nav');
+// iconRight = document.querySelector('.right');
 
 let date = new Date(),
 currYear = date.getFullYear(),
@@ -13,7 +15,6 @@ function renderCal() {
 
     for (let i = 1; i <= lastDateofMonth; i++) {
         liTag += `<li>${i}</li>`;   
-        // console.log(i);
     }
 
 
@@ -23,3 +24,11 @@ function renderCal() {
 }
 
 renderCal();
+
+
+iconLeftRight.forEach(icon => {
+    icon.addEventListener('click', () => {
+        currMonth = icon.id === "prev" ? currMonth -1  : currMonth + 1;
+        renderCal();
+    });
+})
