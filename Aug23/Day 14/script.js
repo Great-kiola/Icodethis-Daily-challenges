@@ -1,13 +1,21 @@
 let currentDate = document.querySelector('.currDay');
-let currentDate2 = document.querySelector('.currDay2');
+let currentDate2 = document.querySelector('.currDay2'),
+currentDay = document.querySelector('.currentDay');
 let daysTag = document.querySelector('.days');
 let iconLeftRight = document.querySelectorAll('.nav');
+// iconRight = document.querySelector('.right');
+
 
 let date = new Date(),
 currYear = date.getFullYear(),
 currMonth = date.getMonth();
 
+// let today = date.getDate();
+// let today = 0;
+// console.log(today);
+
 let months = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 function renderCal() {
     let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // to get first date of month
@@ -19,23 +27,25 @@ function renderCal() {
     for (let i = firstDayofMonth; i > 0; i--) {
         liTag += `<li class="inActive">${lastDateofLastMonth - i + 1}</li>`;   
     }
-
-
+    
+    
     for (let i = 1; i <= lastDateofMonth; i++) {
         let isToday = i === date.getDate() && currMonth === new Date().getMonth()
-                        && currYear === new Date().getFullYear() ? "active" : "";
+        && currYear === new Date().getFullYear() ? "active" : "";
         liTag += `<li class = "${isToday}">${i}</li>`;   
     }
-
+    
     for (let i = lastDayofMonth; i < 6; i++) {
         liTag += `<li class="inActive">${i - lastDayofMonth + 1}</li>`;   
         
     }
-
+    
     currentDate.innerText = `${months[currMonth]} ${currYear}`
     daysTag.innerHTML = liTag;
-
+    
     currentDate2.innerText = `${months[currMonth]}`
+
+    // currentDay.innerText = `${days[today]}`
 }
 
 renderCal();
@@ -44,7 +54,7 @@ renderCal();
 iconLeftRight.forEach(icon => {
     icon.addEventListener('click', () => {
         currMonth = icon.id === "prev" ? currMonth - 1  : currMonth + 1;
-
+        
         if (currMonth < 0 || currMonth > 11){
             
             date = new Date(currYear, currMonth);
@@ -56,3 +66,4 @@ iconLeftRight.forEach(icon => {
         renderCal();
     });
 });
+
