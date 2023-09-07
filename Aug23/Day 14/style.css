@@ -4,13 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
 }
 
 body{
     line-height: 1.5;
     min-height: 100vh;
-    font-family: 'Overpass', sans-serif;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,15 +18,16 @@ body{
 
 .wrapper{
     width: 600px;
-    background-color: var(--numberColumn);
-    height: 650px;
     padding: 35px;
+    background-color: var(--numberColumn);
+    border-radius: 20px 0px 0px 0px;
+    height: 650px;
 }
 
 .wrapper header{
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 25px 30px 10px;
     color: var(--white);
 }
 
@@ -75,11 +75,6 @@ body{
     width: 130px;
 }
 
-.weeks{
-    font-weight: bolder;
-    font-size: 1rem;
-}
-
 .heading{
     text-align: center;
 }
@@ -97,6 +92,10 @@ body{
     outline: none;
 }
 
+.calender{
+    padding: 20px;
+}
+
 .calender ul{
     display: flex;
     list-style: none;
@@ -105,9 +104,19 @@ body{
     text-align: center;
 }
 
+.calender .weeks li{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.calender .days li{
+    cursor: pointer;
+    margin-top: 10px;
+}
+
 .calender ul li{
     width: calc(100% / 7);
-    margin: 7px 0px;
+    /* margin: 7px 0px; */
 }
 
 .days li{

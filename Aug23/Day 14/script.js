@@ -11,11 +11,24 @@ currMonth = date.getMonth();
 let months = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 function renderCal() {
-    let lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(); // to get last date of month
+    let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // to get first date of month
+    lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // to get last date of month
+    lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(), // to get last date of month
+    lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate(); // to get last date of month
     let liTag = ""; 
+
+    for (let i = firstDayofMonth; i > 0; i--) {
+        liTag += `<li class="inActive">${lastDateofLastMonth - i + 1}</li>`;   
+    }
+
 
     for (let i = 1; i <= lastDateofMonth; i++) {
         liTag += `<li>${i}</li>`;   
+    }
+
+    for (let i = lastDayofMonth; i < 6; i++) {
+        liTag += `<li class="inActive">${i - lastDayofMonth + 1}</li>`;   
+        
     }
 
     currentDate.innerText = `${months[currMonth]} ${currYear}`
