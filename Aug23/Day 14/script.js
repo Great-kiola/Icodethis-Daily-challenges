@@ -6,7 +6,7 @@ let iconLeftRight = document.querySelectorAll('.nav');
 // iconRight = document.querySelector('.right');
 
 
-let date = new Date(),
+let date = new Date(), 
 currYear = date.getFullYear(),
 currMonth = date.getMonth();
 
@@ -18,6 +18,7 @@ let months = ["January", "Febuary", "March", "April", "May", "June", "July", "Au
 // let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 function renderCal() {
+    
     let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // to get first date of month
     lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // to get last date of month
     lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(), // to get last date of month
