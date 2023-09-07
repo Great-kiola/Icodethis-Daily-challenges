@@ -2,7 +2,6 @@ let currentDate = document.querySelector('.currDay');
 let currentDate2 = document.querySelector('.currDay2');
 let daysTag = document.querySelector('.days');
 let iconLeftRight = document.querySelectorAll('.nav');
-// iconRight = document.querySelector('.right');
 
 let date = new Date(),
 currYear = date.getFullYear(),
