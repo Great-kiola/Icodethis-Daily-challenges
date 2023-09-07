@@ -12,13 +12,11 @@ let months = ["January", "Febuary", "March", "April", "May", "June", "July", "Au
 
 function renderCal() {
     let lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(); // to get last date of month
-    let liTag = "";
+    let liTag = ""; 
 
     for (let i = 1; i <= lastDateofMonth; i++) {
         liTag += `<li>${i}</li>`;   
     }
-
-
 
     currentDate.innerText = `${months[currMonth]} ${currYear}`
     daysTag.innerHTML = liTag;
@@ -35,6 +33,3 @@ iconLeftRight.forEach(icon => {
         renderCal();
     });
 });
-
-
-currentDate2
