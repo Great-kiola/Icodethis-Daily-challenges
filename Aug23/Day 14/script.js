@@ -3,19 +3,13 @@ let currentDate2 = document.querySelector('.currDay2'),
 currentDay = document.querySelector('.currentDay');
 let daysTag = document.querySelector('.days');
 let iconLeftRight = document.querySelectorAll('.nav');
-// iconRight = document.querySelector('.right');
 
 
 let date = new Date(), 
 currYear = date.getFullYear(),
 currMonth = date.getMonth();
 
-// let today = date.getDate();
-// let today = 0;
-// console.log(today);
-
 let months = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-// let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 function renderCal() {
     
@@ -46,7 +40,6 @@ function renderCal() {
     
     currentDate2.innerText = `${months[currMonth]}`
 
-    // currentDay.innerText = `${days[today]}`
 }
 
 renderCal();
