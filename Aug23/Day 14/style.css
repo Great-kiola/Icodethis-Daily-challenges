@@ -21,7 +21,7 @@ body{
     padding: 35px;
     background-color: var(--numberColumn);
     border-radius: 30px 0px 0px 0px;
-    height: 650px;
+    height: 700px;
 }
 
 .wrapper header{
@@ -56,7 +56,7 @@ body{
 .wrapper2{
     background-color: var(--taskColumn);
     width: 350px;
-    height: 650px;
+    height: 700px;
     padding: 65px;
     display: flex;
     align-items: center;
@@ -120,11 +120,15 @@ body{
 .calender .days li{
     cursor: pointer;
     margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    line-height: 2;
 }
 
 .calender ul li{
     width: calc(100% / 7);
-    transition: all 0.5s ease-in;
+    transition: all 0.1s ease-in;
 }
 
 .calender .days li:hover{
