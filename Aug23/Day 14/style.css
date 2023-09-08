@@ -124,13 +124,16 @@ body{
 
 .calender ul li{
     width: calc(100% / 7);
-    /* margin: 7px 0px; */
+    transition: all 0.5s ease-in;
+}
+
+.calender .days li:hover{
+    background-color: var(--btnColor);
 }
 
 .days li{
     padding: 20px 0px;
     border-radius: 10px;
-
 }
 
 .wrapper2 .heading h1{
