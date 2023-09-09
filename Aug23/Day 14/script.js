@@ -4,7 +4,6 @@ currentDay = document.querySelector('.currentDay');
 let daysTag = document.querySelector('.days');
 let iconLeftRight = document.querySelectorAll('.nav');
 
-
 let date = new Date(), 
 currYear = date.getFullYear(),
 currMonth = date.getMonth();
@@ -61,3 +60,11 @@ iconLeftRight.forEach(icon => {
     });
 });
 
+
+
+// Add Event button
+let AddEvent = document.getElementById('addEvent');
+
+AddEvent.onclick = function(){
+    alert('Clicked');
+}
