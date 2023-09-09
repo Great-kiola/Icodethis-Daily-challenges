@@ -87,23 +87,6 @@ body{
     text-align: center;
 }
 
-/* .wrapper2 .btnClass .btn{
-    width: 150px;
-    padding: 20px;
-    background: var(--btnColor);
-    color: var(--white);
-    text-transform: uppercase;
-    font-size: .8rem;
-    border-radius: 50px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-} */
-
-.wrapper2 .btnClass .btn:hover{
-    width: 140px;
-}
-
 .calender{
     padding: 20px;
 }
