@@ -65,12 +65,16 @@ iconLeftRight.forEach(icon => {
 // Add Event button
 let inputTask = document.querySelector('.inputTask');
 let overlay = document.querySelector('.overlay');
-let AddEvent = document.getElementById('addEvent');
+// let AddEvent = document.getElementById('addEvent');
 
-AddEvent.onclick = function(){
+
+let icons = document.querySelector('.icons');
+
+
+let makeVisible = () => {
     overlay.style.visibility = 'visible';
     inputTask.style.visibility = 'visible';
-}
+}   
 
 function hideTask() {
     inputTask.style.visibility = 'hidden';
@@ -84,10 +88,22 @@ overlay.addEventListener('click', function (){
 
 let textBox = document.querySelector('#textBox');
 let save = document.querySelector('#save');
+let taskList = document.querySelector('.taskList');
 
 save.onclick = () => {
-    let task = textBox.value;
-    console.log(task);
 
-    hideTask();
+    if (textBox.value === ""){
+        alert ("Please make a task");
+    } else {
+        let li = document.createElement("li");
+        li.innerHTML = textBox.value;
+        taskList.appendChild(li);
+
+        icons.style.display = 'none';
+        hideTask();
+    }
+    // let task = textBox.value;
+    // console.log(task);
+
+
 }

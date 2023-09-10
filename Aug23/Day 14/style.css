@@ -253,3 +253,9 @@ input[type="text"]:focus{
 .save:hover{
   transform: scale(1.05);
 }
+
+.icons{
+    /* opacity: 0;
+    visibility: hidden; */
+    display: flex;
+}
