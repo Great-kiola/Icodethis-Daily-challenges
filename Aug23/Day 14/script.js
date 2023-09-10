@@ -66,5 +66,7 @@ iconLeftRight.forEach(icon => {
 let AddEvent = document.getElementById('addEvent');
 
 AddEvent.onclick = function(){
-    alert('Clicked');
+    let user = prompt('Clicked');
+    console.log(user);
+    
 }
