@@ -63,10 +63,18 @@ iconLeftRight.forEach(icon => {
 
 
 // Add Event button
+let inputTask = document.querySelector('.inputTask');
+let overlay = document.querySelector('.overlay');
 let AddEvent = document.getElementById('addEvent');
 
 AddEvent.onclick = function(){
-    let user = prompt('Clicked');
-    console.log(user);
-    
+    overlay.style.visibility = 'visible';
+    inputTask.style.visibility = 'visible';
 }
+
+
+overlay.addEventListener('click', function(){
+    inputTask.style.visibility = 'hidden';
+    overlay.style.visibility = 'hidden';
+});
+

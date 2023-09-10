@@ -14,6 +14,7 @@ body{
     align-items: center;
     justify-content: center;
     background: var(--bgColor);
+    position: relative;
 }
 
 .wrapper{
@@ -195,4 +196,61 @@ body{
 
 .btn:not(:disabled):active {
   transform: translateY(.125rem);
+}
+
+.overlay{
+    background-color: #000;
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    opacity: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    /* pointer-events: all; */
+}
+
+.inputTask{
+    min-width: 500px;
+    background-color: var(--numberColumn);
+    height: 250px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    visibility: hidden;
+    padding: 0px 50px;
+}
+
+input[type="text"]{
+    width: 500px;
+    height: 70px;
+    padding: 20px;
+    background-color: var(--white);
+    margin-right: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2rem;
+}
+
+input[type="text"]:focus{
+    outline: none;
+}
+
+.save{
+    width: 100px;
+    height: 70px;
+    background-color: var(--btnColor);
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.save:hover{
+  transform: scale(1.05);
 }
