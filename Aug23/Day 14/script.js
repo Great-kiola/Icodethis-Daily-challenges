@@ -72,9 +72,22 @@ AddEvent.onclick = function(){
     inputTask.style.visibility = 'visible';
 }
 
-
-overlay.addEventListener('click', function(){
+function hideTask() {
     inputTask.style.visibility = 'hidden';
     overlay.style.visibility = 'hidden';
+}   
+
+overlay.addEventListener('click', function (){
+    hideTask();
 });
 
+
+let textBox = document.querySelector('#textBox');
+let save = document.querySelector('#save');
+
+save.onclick = () => {
+    let task = textBox.value;
+    console.log(task);
+
+    hideTask();
+}
