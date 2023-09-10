@@ -254,8 +254,12 @@ input[type="text"]:focus{
   transform: scale(1.05);
 }
 
-.icons{
-    /* opacity: 0;
-    visibility: hidden; */
+.tasks {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+
+/* .icons{
+    display: none;
+} */

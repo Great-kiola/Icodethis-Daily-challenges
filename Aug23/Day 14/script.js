@@ -99,8 +99,14 @@ save.onclick = () => {
         li.innerHTML = textBox.value;
         taskList.appendChild(li);
 
+        let span = document.createElement("span");
+        span.innerHTML = '\u00d7'
+        li.appendChild(span);
+
         icons.style.display = 'none';
         hideTask();
+
+        textBox.value = "";
     }
     // let task = textBox.value;
     // console.log(task);
