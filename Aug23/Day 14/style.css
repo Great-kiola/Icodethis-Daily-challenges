@@ -207,8 +207,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    visibility: hidden;#
-}
+    visibility: hidden;
 
 .inputTask{
     min-width: 500px;
