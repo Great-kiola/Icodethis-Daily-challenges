@@ -263,16 +263,23 @@ input[type="text"]:focus{
 .tasks ul li{
     list-style: none;
     position: relative;
+    background: rgb(47, 23, 127);
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .tasks ul li span{
     position: absolute;
-    right: 0;
+    right: 15px;
     cursor: pointer;
     /* top: 5px; */
     /* margin-left: 20px; */
 }
 
-.checked{
-    background: red;
+.checked::before{
+    content: "";
+    border-radius: 10px;
+    background: rgb(230, 2, 2);
+    padding: 15px;
+    margin-bottom: 5px;
 }
