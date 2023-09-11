@@ -67,12 +67,12 @@ body{
 }
 
 .icons{
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     align-items: center;
     opacity: 15%;
     color: var(--white);
-    display: none;
+    /* display: none; */
 }
 
 .icons h2{

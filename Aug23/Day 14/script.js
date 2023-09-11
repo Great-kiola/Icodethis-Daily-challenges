@@ -103,8 +103,13 @@ save.onclick = () => {
         span.innerHTML = '\u00d7'
         li.appendChild(span);
 
-        icons.style.display = 'none';
         hideTask();
+
+        if (taskList == ""){
+            icons.style.display = 'flex';
+        } else {
+            icons.style.display = 'none';
+        }
 
         textBox.value = "";
     }
