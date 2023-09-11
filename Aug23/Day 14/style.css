@@ -260,6 +260,23 @@ input[type="text"]:focus{
     gap: 10px;
 }
 
+.tasks ul li{
+    list-style: none;
+    position: relative;
+}
+
+.tasks ul li span{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    /* top: 5px; */
+    /* margin-left: 20px; */
+}
+
+.checked{
+    background: red;
+}
+
 /* .icons{
     display: none;
 } */
