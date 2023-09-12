@@ -106,24 +106,30 @@ save.onclick = () => {
         icons.style.display = 'none';
         hideTask();
 
-        // if (taskList == ""){
-        //     icons.style.display = 'flex';
-        // } else {
-        // }
-
         textBox.value = "";
+        saveData();
+        
     }
-    // let task = textBox.value;
-    // console.log(task);
-
-
 }
 
 taskList.addEventListener('click', function(e){
     if (e.target.tagName === 'LI') {
         e.target.classList.toggle('checked');
+        saveData();
     } 
     else if (e.target.tagName === 'SPAN') {
         e.target.parentElement.remove();
+        saveData();
     }
 });
+
+function saveData() {
+    localStorage.setItem('myTasks', taskList.innerHTML);
+}
+
+function showData() {
+    taskList.innerHTML = localStorage.getItem('myTasks');
+    icons.style.display = 'none';
+
+}
+showData();
