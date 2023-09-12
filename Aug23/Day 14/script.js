@@ -108,6 +108,8 @@ save.onclick = () => {
 
         textBox.value = "";
         saveData();
+        showData();
+
         
     }
 }
@@ -130,6 +132,10 @@ function saveData() {
 function showData() {
     taskList.innerHTML = localStorage.getItem('myTasks');
     icons.style.display = 'none';
+    
+    if (taskList.innerHTML === ''){
+        icons.style.display = 'flex';
+    };
 
 }
 showData();
