@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+
+:root{
+    --freeColor: #f9fafe;
+    --liteColor: (linear-gradient(90deg, #f9fafe, #c3d0fe ));
+    --proColor: (linear-gradient(90deg, #ffb2be, #ffca72));
+    --btnColor: #28264d;
+    --contcolor: #ffffff;
+    --bgColor: #f9fafe;
+}
