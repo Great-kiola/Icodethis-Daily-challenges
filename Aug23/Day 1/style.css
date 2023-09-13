@@ -12,6 +12,34 @@ body{
     background-color: var(--bgColor);
 }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 20px;
+    gap: 40px;
+    padding: 45px;
+    background-color: var(--contcolor);
+}
+
+.price, .head{
+    text-align: center;
+}
+
+.btn{
+    border: 2px solid var(--btnColor);
+    background: transparent;
+    padding: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 :root{
     --freeColor: #f9fafe;
