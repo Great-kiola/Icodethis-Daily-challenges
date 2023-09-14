@@ -52,6 +52,7 @@ body{
     color: var(--bgColor);
     text-transform: uppercase;
     font-size: .6rem;
+    border-radius: 5px;
 }
 
 #box1 .head h1{
