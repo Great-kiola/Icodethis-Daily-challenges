@@ -112,6 +112,12 @@ body{
     color: var(--contcolor);
 }
 
+#box2 .btn:hover{
+    border: 2px solid var(--btnColor);
+    background: transparent;
+    color: var(--btnColor);
+}
+
 .btn:hover{
     background-color: var(--btnColor);
     color: var(--contcolor);
