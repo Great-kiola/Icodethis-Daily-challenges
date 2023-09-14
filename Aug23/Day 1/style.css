@@ -9,8 +9,10 @@
 body{
     line-height: 1.5;
     min-height: 100vh;
-    display: grid;
-    place-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: var(--bgColor);
 }
 
@@ -74,14 +76,15 @@ body{
 .price h1 .curr{
     font-size: 1.5rem;
     position: absolute;
-    left: 125px;
     top: 15px;
+    margin-left: -15px;
 }
 
 .price p{
-    /* width: 250px; */
     font-size: 1.2rem;
     text-align: center;
+    font-weight: 500;
+    color: var(--btnColor);
 }
 
 .btn{
@@ -101,7 +104,6 @@ body{
 .btn:hover{
     background-color: var(--btnColor);
     color: var(--contcolor);
-    /* border: none; */
 }
 
 .feats ul li{
@@ -124,6 +126,18 @@ li.cancel:before{
     margin: 0 15px 0 -15px;
     color: red;
 } 
+
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: var(--btnColor);
+    width: 50px;
+    height: 50px;
+    color: var(--contcolor);
+    padding-top: 8px;
+    border-radius: 50px;
+    text-align: center;
+}
 
 :root{
     --freeColor: #f9fafe;
