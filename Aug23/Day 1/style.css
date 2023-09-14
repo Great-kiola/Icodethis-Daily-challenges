@@ -10,16 +10,26 @@ body{
     line-height: 1.5;
     min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
     background-color: var(--bgColor);
 }
 
 .container{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.planCont{
+    display: flex;
+}
+
+.iconCont{
+    width: 50px;
+    border-radius: 20px;
+    margin-left: 20px;
+    background: var(--btnColor);
 }
 
 .box{
