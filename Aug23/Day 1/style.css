@@ -101,7 +101,7 @@ body{
 .btn:hover{
     background-color: var(--btnColor);
     color: var(--contcolor);
-    border: none;
+    /* border: none; */
 }
 
 .feats ul li{
