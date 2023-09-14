@@ -35,7 +35,7 @@ body{
 }
 
 #box1 .head{
-    background-image: var(--freeColor);
+    background: var(--freeColor);
 }
 
 .price{
@@ -103,6 +103,27 @@ body{
     color: var(--contcolor);
     border: none;
 }
+
+.feats ul li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+li:before {    
+    font-family: 'FontAwesome', sans-serif;
+    content: '\f00c';
+    margin: 0 15px 0 -15px;
+    color: green;
+}
+
+li.cancel:before{   
+    font-family: 'FontAwesome', sans-serif;
+    content: '\f00d';
+    margin: 0 15px 0 -15px;
+    color: red;
+} 
 
 :root{
     --freeColor: #f9fafe;
