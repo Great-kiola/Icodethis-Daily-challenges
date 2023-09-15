@@ -35,11 +35,17 @@ body{
 .box{
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 10px;
     gap: 90px;
     padding: 40px;
     background-color: var(--contcolor);
     width: 400px;
+    transition: all 0.1s ease-in;
+}
+
+.box:hover{
+    cursor: pointer;
+    transform: scale(.9);
 }
 
 #box2 .head{
