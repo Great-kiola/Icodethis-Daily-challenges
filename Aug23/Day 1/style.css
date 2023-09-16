@@ -13,12 +13,12 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--bgColor);
+    color: var(--textColor);
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 .planCont{
@@ -54,6 +54,7 @@ body{
 
 #box1 .head{
     background: var(--freeColor);
+    color: var(--textColor);
 }
 
 .price{
@@ -73,7 +74,6 @@ body{
 
 #box1 .head h1{
     font-weight: 700;
-    color: #000;
 }
 
 .head h1{
@@ -111,11 +111,12 @@ body{
     border-radius: 10px;
     cursor: pointer;
     font-size: 1.2rem;
+    color: var(--textColor);
 }
 
 #box2 .btn{
     background-color:var(--btnColor);
-    color: var(--contcolor);
+    color: var(--iconCol);
 }
 
 #box2 .btn:hover{
@@ -126,7 +127,7 @@ body{
 
 .btn:hover{
     background-color: var(--btnColor);
-    color: var(--contcolor);
+    color: var(--iconCol);
 }
 
 .feats ul li{
@@ -156,7 +157,7 @@ li.cancel:before{
     background-color: var(--btnColor);
     width: 50px;
     height: 50px;
-    color: var(--contcolor);
+    color: var(--iconCol);
     padding-top: 8px;
     border-radius: 50px;
     text-align: center;
@@ -169,4 +170,14 @@ li.cancel:before{
     --btnColor: #28264d;
     --contcolor: #ffffff;
     --bgColor: #f9fafe;
+    --textColor: #000;
+    --iconCol: #e9eaf2;
+}
+
+.darkMode{
+    --textColor: #e9eaf2;
+    --bgColor:#1b1b20ff;
+    --contcolor: #28292fff;
+    --textColor: #e9eaf2;
+    --btnColor: #7570d7;
 }
