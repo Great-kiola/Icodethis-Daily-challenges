@@ -152,16 +152,30 @@ li.cancel:before{
 } 
 
 .icon{
-    font-size: 2rem;
+    font-size: 1.7rem;
     cursor: pointer;
     background-color: var(--btnColor);
     width: 50px;
     height: 50px;
     color: var(--iconCol);
-    padding-top: 8px;
+    padding-top: 9.5px;
     border-radius: 50px;
     text-align: center;
 }
+
+#box1{
+    box-shadow: #dadbdd 0px 25px 20px -20px;
+}
+
+#box2{
+    box-shadow: #b475fe 0px 25px 20px -20px;
+}
+
+#box3{
+    box-shadow: #ffca72 0px 25px 20px -20px;
+
+}
+
 
 :root{
     --freeColor: #f9fafe;
