@@ -21,6 +21,13 @@ body{
     border-radius: 10px;
 }
 
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
 .profile h1{
     font-size: 1.5rem;   
     margin-bottom: -8px;
@@ -54,6 +61,20 @@ button{
     border: none;
     border-radius: 6px;
     color: var(--white);
+    cursor: pointer;
+}
+
+.join{
+    background-color: green;
+}
+
+.join:hover{
+    background-color: greenyellow;
+    color: black;
+}
+
+button:hover{
+    background-color: rgb(29, 108, 198);
 }
 
 :root{
