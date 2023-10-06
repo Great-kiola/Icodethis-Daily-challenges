@@ -15,16 +15,13 @@ body{
 }
 
 .container{
-    width: 400px;
+    width: 500px;
     background-color: var(--white);
     padding: 20px;
     border-radius: 10px;
 }
 
 .profile{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-top: 10px;
 }
 
@@ -75,6 +72,42 @@ button{
 
 button:hover{
     background-color: rgb(29, 108, 198);
+}
+
+.profs h1{
+    font-size: 1rem;
+}
+
+.mainImg .texts .userProf img{
+    width: 35px;
+    border-radius: 50px;
+    border: 3px solid var(--white);
+    margin-top: 7px;
+}
+
+.profs{
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.mainImg{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.mainImg img{
+    width: 55px;
+    border-radius: 50px;
+}
+
+.userProf {
+    display: flex;
+}
+
+.user{
+    margin-right: -10px;
 }
 
 :root{
