@@ -8,10 +8,18 @@ body{
     line-height: 1.5;
     min-height: 100vh;
     background-color: var(--bgColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container{
     background-color: var(--white);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* width: 250px; */
 }
 
 .icon svg{
