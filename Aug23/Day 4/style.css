@@ -15,11 +15,30 @@ body{
 
 .container{
     background-color: var(--white);
-    padding: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.sync{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sync , .updating {
+    border-bottom: 2px solid var(--borderCol);
+    padding-bottom: 15px;
+}
+
+.sync .iconText, .updating{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    /* width: 250px; */
+    gap: 7px;
+    
 }
 
 .icon svg{
@@ -29,4 +48,5 @@ body{
 :root{
     --bgColor: #f6faffff;
     --white: #fff;
+    --borderCol: #a1add4ff;
 }
