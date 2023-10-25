@@ -22,17 +22,24 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .modal img{
     margin-bottom: 20px;
-    width: 80px;
+    width: 75px;
+}
+
+.cancel{
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 p{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
     margin-bottom: 20px;
+    width: 300px;
 }
 
 .btn {
@@ -51,6 +58,12 @@ p{
     border: none;
     border-radius: 5px;
     color: var(--white);
+    width: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn .accept:hover {
+    background-color: var(--btnColor2);
 }
 
 .btn .learn {
@@ -67,4 +80,5 @@ p{
     --white: #fff;
     --bgColor: #f8f8f8f8;
     --btnColor: #9eca3b;
+    --btnColor2: #7da324;
 }
