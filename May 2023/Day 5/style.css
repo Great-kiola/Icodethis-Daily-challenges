@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--bgColor);
+}
+
+.modal{
+    background-color: var(--white);
+}
+
+.btn .accept{
+    background-color: var(--btnColor);
+}
+
+:root{
+    --white: #ffffffff;
+    --bgColor: #f8f8f8ff;
+    --btnColor: #9eca3b;
+}
