@@ -20,8 +20,8 @@ main{
 
 .card{
     background-color: var(--white);
-    /* padding: 0px 0px 10px; */
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
 .card .toopTip{
@@ -49,8 +49,12 @@ main{
 }
 
 .imgDiv{
-    border-radius: 10px;
     background-size: cover;
+}
+
+.card .imgDiv img{
+    width: 350px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .profileDiv .imgProfile img{
@@ -58,15 +62,12 @@ main{
     border-radius: 50px;
 }
 
-.card img{
-    width: 350px;
-}
 
 .profileDiv{
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 h1{
