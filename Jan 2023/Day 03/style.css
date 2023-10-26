@@ -7,4 +7,21 @@
 body{
     line-height: 1.5;
     min-height: 100vh;
+    background: var(--bgColor);
+    display: grid;
+    place-content: center;
+}
+
+.card{
+    background-color: var(--white);
+    padding: 20px;
+}
+
+.card img{
+    width: 250px;
+}
+
+:root{
+    --bgColor: #f6f8fcff;
+    --white: #fff;
 }
