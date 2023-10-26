@@ -12,16 +12,77 @@ body{
     place-content: center;
 }
 
+main{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
 .card{
     background-color: var(--white);
-    padding: 20px;
+    /* padding: 0px 0px 10px; */
+    border-radius: 10px;
+}
+
+.card .toopTip{
+    background-color: var(--tecColor);
+    width: 120px;
+    color: var(--white);
+    font-size: .8rem;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card .popular{
+    background-color: var(--popularCol);
+}
+
+.card .design{
+    background-color: var(--designCol);
+}
+
+.secondDiv{
+    width: 300px;
+    padding: 25px;
+}
+
+.imgDiv{
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.profileDiv .imgProfile img{
+    width: 45px;
+    border-radius: 50px;
 }
 
 .card img{
-    width: 250px;
+    width: 350px;
+}
+
+.profileDiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+h1{
+    font-size: 1.2rem;
+}
+
+h2{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 :root{
     --bgColor: #f6f8fcff;
     --white: #fff;
+    --tecColor: #47bbd3ff;
+    --popularCol: #5c76b9;
+    --designCol: #ce5d9eff;
 }
