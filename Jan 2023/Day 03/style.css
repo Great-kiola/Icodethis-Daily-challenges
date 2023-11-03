@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+    background: var(--bgColor);
+    display: grid;
+    place-content: center;
+}
+
+main{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.card{
+    height: 500px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.card .toopTip{
+    background-color: var(--tecColor);
+    width: 120px;
+    color: var(--white);
+    font-size: .8rem;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card .popular{
+    background-color: var(--popularCol);
+}
+
+.card .design{
+    background-color: var(--designCol);
+}
+
+.secondDiv{
+    width: 300px;
+    padding: 25px;
+}
+
+.imgDiv{
+    background-size: cover;
+}
+
+.card .imgDiv img{
+    width: 350px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.profileDiv .imgProfile img{
+    width: 45px;
+    border-radius: 50px;
+}
+
+
+.profileDiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+h1{
+    font-size: 1.2rem;
+}
+
+h2{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+:root{
+    --bgColor: #f6f8fcff;
+    --white: #fff;
+    --tecColor: #47bbd3ff;
+    --popularCol: #5c76b9;
+    --designCol: #ce5d9eff;
+}
