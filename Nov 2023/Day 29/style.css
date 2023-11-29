@@ -11,7 +11,7 @@ body{
 }
 
 .card{
-    
+    background-color: var(--cardColor);
 }
 
 
