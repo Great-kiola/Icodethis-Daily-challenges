@@ -8,3 +8,12 @@ body{
     line-height: 1.5;
     min-height: 100vh;
 }
+
+
+
+:root{
+    --bgColor: #191b1d;
+    --cardColor: #22262bff;
+    --accentColor: #bc1f4b;
+    --white: #fff;
+}
