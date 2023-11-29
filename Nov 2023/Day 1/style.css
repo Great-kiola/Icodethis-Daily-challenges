@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+    background-color: var(--bgColor);
+    display: grid;
+    place-items: center;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    background-color: var(--cardColor);
+    width: 300px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 40px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.heading:before{
+    content: "";
+    background-color: var(--btnColor2);
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    bottom: -70px;
+    z-index: -1;
+    border-radius: 100%;
+}
+
+.heading::after{
+    content: "";
+    background-color: var(--btnColor1);
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    bottom: -80px;
+    transform: rotate(10deg);
+    z-index: -2;
+    border-radius: 100%;
+}
+
+.btnClass{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.btn{
+    background-color: var(--btnColor1);
+    padding: 20px 30px;
+    border-radius: 30px;
+    color: var(--cardColor);
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    margin-right: 10px;
+}
+
+h1{
+    color: var(--btnColor1);
+    font-size: 1.2rem;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text h2{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.container img{
+    width: 65px;
+    margin-bottom: 20px;
+}
+
+.prevBtn{
+    background-color: var(--btnColor2);
+    color: var(--black);
+}
+
+
+:root{
+    --bgColor: #d1e3ffff;
+    --cardColor: #fff;
+    --btnColor1: #455eccff;
+    --btnColor2: #eceef9ff;
+    --black: #000;
+}
