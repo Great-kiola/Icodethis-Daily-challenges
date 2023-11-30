@@ -15,14 +15,49 @@ body{
     font-family: 'Share Tech Mono', monospace;
 }
 
+main{
+    display: flex;
+}
+
 .card{
     background-color: var(--cardColor);
-    padding: 25px;
+    padding: 45px;
+    border-radius: 10px;
     color: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    margin-right: 15px;
+    width: 400px;
+}
+
+ul{
+    position: relative;
+}
+
+li::marker {
+    color: var(--accentColor);
+}
+
+li{
+    margin: 20px;
+}
+
+.priceDiv{
+    text-align: center;
+}
+
+.priceDiv h1{
+    font-size: 1rem;
+}
+
+.priceDiv h2{
+    font-size: 4rem;
+}
+
+.priceDiv, .features{
+    margin-bottom: 30px;
 }
 
 button{
@@ -32,6 +67,19 @@ button{
     color: var(--white);
     margin-top: 20px;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+button.pro{
+    background-color: var(--accentColor);
+}
+
+button:hover{
+    background-color: var(--accentColor);
+}
+
+span{
+    font-size: 1.2rem;
 }
 
 :root{
