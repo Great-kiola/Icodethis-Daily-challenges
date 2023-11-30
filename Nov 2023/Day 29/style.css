@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,12 +10,29 @@ body{
     line-height: 1.5;
     min-height: 100vh;
     background-color: var(--bgColor);
+    display: grid;
+    place-content: center;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .card{
     background-color: var(--cardColor);
+    padding: 25px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
+button{
+    border: 1px solid var(--accentColor);
+    background-color: transparent;
+    padding: 15px 35px;
+    color: var(--white);
+    margin-top: 20px;
+    cursor: pointer;
+}
 
 :root{
     --bgColor: #191b1d;
