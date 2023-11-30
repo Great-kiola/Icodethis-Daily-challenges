@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     line-height: 1.5;
     min-height: 100vh;
     background-color: var(--bgColor);
@@ -15,11 +15,48 @@ body{
     font-family: 'Share Tech Mono', monospace;
 }
 
-main{
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.currentPlan{
+    margin-top: 20px;
+    background-color: var(--accentColor);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 60px;
+    position: fixed;
+    top: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.currentPlan h1{
+    font-size: 1.5rem;
+}
+
+.select{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardContainer {
     display: flex;
 }
 
-.card{
+.head{
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+}
+
+.card {
     background-color: var(--cardColor);
     padding: 45px;
     border-radius: 10px;
@@ -32,7 +69,11 @@ main{
     width: 400px;
 }
 
-ul{
+.head h1{
+    margin-bottom: 15px;
+}
+
+ul {
     position: relative;
 }
 
@@ -40,27 +81,28 @@ li::marker {
     color: var(--accentColor);
 }
 
-li{
+li {
     margin: 20px;
 }
 
-.priceDiv{
+.priceDiv {
     text-align: center;
 }
 
-.priceDiv h1{
+.priceDiv h1 {
     font-size: 1rem;
 }
 
-.priceDiv h2{
+.priceDiv h2 {
     font-size: 4rem;
 }
 
-.priceDiv, .features{
+.priceDiv,
+.features {
     margin-bottom: 30px;
 }
 
-button{
+button {
     border: 1px solid var(--accentColor);
     background-color: transparent;
     padding: 15px 35px;
@@ -68,21 +110,70 @@ button{
     margin-top: 20px;
     cursor: pointer;
     border-radius: 5px;
+    transition: all cubic-bezier(1, 1.5, 0.7, 1) 0.3s;
 }
 
-button.pro{
+button.pro {
     background-color: var(--accentColor);
 }
 
-button:hover{
+button:hover {
     background-color: var(--accentColor);
 }
 
-span{
+span {
     font-size: 1.2rem;
 }
 
-:root{
+.toggle {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 65px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #707070;
+    transition: background-color ease 0.3s;
+    margin:0 10px;
+}
+
+.toggle:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-indent: -22px;
+    word-spacing: 37px;
+    color: #fff;
+    text-shadow: -1px -1px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+
+.toggle:checked {
+    background-color: var(--accentColor);
+}
+
+.toggle:checked:before {
+    left: 36px;
+}
+
+:root {
     --bgColor: #191b1d;
     --cardColor: #22262bff;
     --accentColor: #bc1f4b;
