@@ -7,8 +7,13 @@
 body{
     line-height: 1.5;
     min-height: 100vh;
+    background-color: var(--bgColor);
 }
 
+
+.card{
+    background-color: var(--cardColor);
+}
 
 :root{
     --bgColor: #10182f;
