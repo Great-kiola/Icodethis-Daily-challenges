@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,4 +12,14 @@ body{
     background-image: url("https://i.postimg.cc/dtQmrFR5/sale-banner.png");
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    place-content: center;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
