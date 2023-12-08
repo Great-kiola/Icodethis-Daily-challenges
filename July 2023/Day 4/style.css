@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@ body{
     background-image: linear-gradient(to bottom, var(--bgColor1), var(--bgColor2));
     display: grid;
     place-content: center;
+    font-family: 'Figtree', sans-serif;
 }
 
 .div{
@@ -39,6 +42,9 @@ body{
 
 .mainDiv{
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .orderDiv{
@@ -48,10 +54,17 @@ body{
     gap: 25px;
 }
 
-.counter, .price{
+.counter, .price, .addBeverage{
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.addBeverage{
+    width: 250px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1.5px solid #000;
 }
 
 .textDiv{
