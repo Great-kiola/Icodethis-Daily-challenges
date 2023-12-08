@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+    background-color: var(--bgColor);
+    display: grid;
+    place-content: center;
+}
+
+.heading h1{
+    font-size: 1.5rem;
+}
+
+.heading p{
+    font-size: .9rem;
+}
+
+.card{
+    border-radius: 10px;
+    background-color: var(--cardColor);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 55px 0px;
+    width: 1100px;
+}
+
+.tools{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 25px;
+}
+
+.tool1{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 10px 40px;
+}
+
+.verified{
+    display: flex;
+    align-items: center;
+
+}
+
+.verified svg{
+    color: var(--verifiedColor);
+    margin-left: 6px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.tool1 img{
+    width: 100px;
+    border-radius: 100px;
+    margin-right: 15px;
+}
+
+.texts h1{
+    font-size: 1.1rem;
+}
+
+button{
+    padding: 15px 40px;
+    background-color: var(--bgColor);
+    color: var(--cardColor);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+.toolTip{
+    background-color: var(--buttonColor);
+    width: 120px;
+    padding: 12px;
+    border-radius: 7px;
+    color: var(--cardColor);
+    text-align: center;
+    position: absolute;
+    bottom: 45px;
+    right: -42px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.toolTip::before{
+    content: "";
+    position: absolute;
+    background-color: var(--buttonColor);
+    width: 15px;
+    height: 15px;
+    bottom: -8px;
+    transform: rotate(45deg);
+}
+
+.myVerif{
+    position: relative;
+}
+
+.myVerif:hover .toolTip{
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+:root{
+    --bgColor: #10182f;
+    --cardColor: #fff;
+    --buttonColor: #10182fff;
+    --verifiedColor: #1e8530;
+}
