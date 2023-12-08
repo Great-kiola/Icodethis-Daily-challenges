@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, var(--bgColor1), var(--bgColor2));
+    display: grid;
+    place-content: center;
+}
+
+.div{
+    background-color: var(--accentColor);
+    width: 100%;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.div::before{
+    content: "";
+    width: 130px;
+    height: 130px;
+    background-color: var(--cardColor);
+    position: absolute;
+    bottom: -70px;
+    left: 160px;
+    border-radius: 50%;
+}
+
+.card{
+    background-color: var(--cardColor);
+    border-radius: 10px;
+}
+
+.mainDiv{
+    padding: 25px;
+}
+
+.orderDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.counter, .price{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.textDiv{
+    text-align: center;
+}
+
+.btn{
+    width: 100%;
+    background-color: var(--accentColor);
+    padding: 20px;
+    border: none;
+}
+
+
+
+:root{
+    --bgColor1:#ffc76f;
+    --bgColor2:#fc8d60;
+    --cardColor: #fff;
+    --accentColor: #ff6849;
+}
