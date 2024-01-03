@@ -61,18 +61,20 @@ body{
     gap: 25px;
 }
 
-.counter, .price, .addBeverage{
+.counter, .price, .addBev{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
-.addBeverage{
-    max-width: 200px;
-    padding: 10px 20px;
+.addBev{
+    background: transparent;
+    width: 200px;
+    padding: 15px 20px;
     border-radius: 10px;
     border: 1.5px solid #000;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .textDiv{
@@ -87,6 +89,12 @@ body{
     font-size: 1rem;
     color: var(--cardColor);
     font-weight: bold;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+}
+
+.btn:hover , .addBev:hover{
+    transform: scale(.9);
 }
 
 .totalDiv{
@@ -104,7 +112,8 @@ body{
 }
 
 .total h1{
-    font-size: 1.1rem;
+    font-size: .9rem;
+    font-weight: 500;
 }
 
 h1{
