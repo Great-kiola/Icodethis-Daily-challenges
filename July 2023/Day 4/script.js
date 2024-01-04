@@ -7,6 +7,7 @@ let cancel = document.getElementById('cancel');
 
 callFunctions();
 
+// Function for increasing quantity
 function increment (){
     add.addEventListener('click', function(){
         quantity.innerHTML++
@@ -14,12 +15,14 @@ function increment (){
 
 }
 
+// Function for Decreasing quantity
 function decrement(){
     remove.addEventListener('click', function(){
         quantity.innerHTML--
     })
 }
 
+// Function for removing the orderDiv
 function removeDiv(){
     cancel.addEventListener('click', function(){
         orderDiv.remove();
