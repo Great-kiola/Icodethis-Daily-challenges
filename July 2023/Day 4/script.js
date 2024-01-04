@@ -5,10 +5,13 @@ let quantity = document.querySelector(".quantity");
 let orderDiv = document.getElementById('order1');
 let cancel = document.getElementById('cancel');
 
+callFunctions();
+
 function increment (){
     add.addEventListener('click', function(){
         quantity.innerHTML++
     })
+
 }
 
 function decrement(){
@@ -21,9 +24,11 @@ function removeDiv(){
     cancel.addEventListener('click', function(){
         orderDiv.remove();
     });
+    
 }
 
-
-increment();
-decrement();
-removeDiv();
+function callFunctions(){
+    increment();
+    decrement();
+    removeDiv();
+}
