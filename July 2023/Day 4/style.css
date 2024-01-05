@@ -55,6 +55,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: relative;
 }
 
 .orderDiv{
@@ -62,6 +63,7 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 25px;
+    margin-bottom: 10px;
 }
 
 .counter, .price, .addBev{
@@ -132,6 +134,24 @@ h2{
     cursor: pointer;
     font-size: 1.2rem;
 }
+
+/* Modal */
+.modal{
+    background-color: var(--totalDiv);
+    padding: 15px 20px;
+    position: absolute;
+    top: -120px;
+    border-radius: 10px;
+    width: 450px;
+}
+
+.beverages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bevDetails .price{}
+
 
 :root{
     --bgColor1:#ffc76f;
