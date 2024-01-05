@@ -40,13 +40,11 @@ function removeDiv(){
 addBev.addEventListener("click", function(e) {
     e.preventDefault();
     modal.style.display = "block";
-
 });
 
 overlay.addEventListener("click", function(e) {
     e.preventDefault();
-    modal.style.display = "none";
-    // modal.classList.add("removeModal");
+    modal.classList.add("removeModal");
 });
 
 function callFunctions(){

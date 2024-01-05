@@ -184,8 +184,13 @@ h2 {
 
 .removeModal {
     animation: bounceOutUp .9s ease;
+    display: none;
 }
 
+
+
+
+/* Root */
 :root {
     --bgColor1: #ffc76f;
     --bgColor2: #fc8d60;
