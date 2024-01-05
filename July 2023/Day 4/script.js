@@ -10,6 +10,11 @@ modal = document.querySelector(".modal"),
 overlay = document.querySelector(".close-modal");
 
 
+let openModal = document.querySelector(".open");
+let closeModal = document.querySelector(".close");
+
+
+
 
 
 callFunctions();
@@ -39,12 +44,14 @@ function removeDiv(){
 
 addBev.addEventListener("click", function(e) {
     e.preventDefault();
-    modal.style.display = "block";
+    // modal.style.display = "block";
+    modal.classList.add("open");
 });
 
 overlay.addEventListener("click", function(e) {
     e.preventDefault();
-    modal.classList.add("removeModal");
+    modal.classList.remove("open");
+    modal.classList.add("closeModal");
 });
 
 function callFunctions(){
