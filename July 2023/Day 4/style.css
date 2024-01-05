@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     line-height: 1.5;
     min-height: 100vh;
     background-image: linear-gradient(to bottom, var(--bgColor1), var(--bgColor2));
@@ -15,25 +15,25 @@ body{
     font-family: 'Figtree', sans-serif;
 }
 
-.div{
+.div {
     background-color: var(--accentColor);
     /* width: 100%; */
     height: 150px;
     border-radius: 10px 10px 0 0;
     margin-bottom: 60px;
     position: relative;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.div img{
+.div img {
     width: 100px;
     position: absolute;
     top: 106px;
 }
 
-.div::before{
+.div::before {
     content: "";
     width: 130px;
     height: 130px;
@@ -43,14 +43,14 @@ body{
     border-radius: 50%;
 }
 
-.card{
+.card {
     width: 500px;
     background-color: var(--cardColor);
     border-radius: 10px;
     position: relative;
 }
 
-.mainDiv{
+.mainDiv {
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@ body{
     position: relative;
 }
 
-.orderDiv{
+.orderDiv {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,13 +66,15 @@ body{
     margin-bottom: 10px;
 }
 
-.counter, .price, .addBev{
+.counter,
+.price,
+.addBev {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.addBev{
+.addBev {
     background: transparent;
     width: 200px;
     padding: 15px 20px;
@@ -83,11 +85,11 @@ body{
     gap: 10px;
 }
 
-.textDiv{
+.textDiv {
     text-align: center;
 }
 
-.btn{
+.btn {
     width: 100%;
     background-color: var(--accentColor);
     padding: 20px;
@@ -99,17 +101,18 @@ body{
     border-radius: 10px;
 }
 
-.btn:hover , .addBev:hover{
+.btn:hover,
+.addBev:hover {
     transform: scale(.9);
 }
 
-.totalDiv{
+.totalDiv {
     background-color: var(--totalDiv);
     padding: 25px;
     border-radius: 10px;
 }
 
-.total{
+.total {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -117,56 +120,165 @@ body{
     margin: 5px 0px;
 }
 
-.total h1{
+.total h1 {
     font-size: .9rem;
     font-weight: 500;
 }
 
-h1{
+h1 {
     font-size: 1.1rem;
 }
 
-h2{
+h2 {
     font-size: 1.1rem;
 }
 
-#add , #remove, .uil-times-circle{
+#add,
+#remove,
+.uil-times-circle {
     cursor: pointer;
     font-size: 1.2rem;
 }
 
 /* Modal */
-.modal{
-    background-color: var(--totalDiv);
+.modal {
+    display: none;
     padding: 15px 20px;
     position: absolute;
     top: -180px;
-    border-radius: 10px;
     width: 450px;
+    animation: slideInDown .9s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    background: rgba( 255, 255, 255, 0.8 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.beverages{
+.beverages {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
     border-bottom: 1px dashed var(--black);
 }
 
-.bevDetails h2{
+.bevDetails h2 {
     font-size: 1.3rem;
 }
 
-.bevDetails .price{
+.bevDetails .price {
     font-size: .9rem;
     font-weight: 600;
 }
 
+.close-modal {
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: var(--bgColor1);
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
 
-:root{
-    --bgColor1:#ffc76f;
-    --bgColor2:#fc8d60;
+.removeModal {
+    animation: bounceOutUp .9s ease;
+}
+
+:root {
+    --bgColor1: #ffc76f;
+    --bgColor2: #fc8d60;
     --cardColor: #fff;
     --accentColor: #ff6849;
     --totalDiv: #f5f4f7;
     --black: #000;
+}
+
+
+/* Animation */
+.slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+/* Bounce Out */
+.bounceOutUp {
+    -webkit-animation-name: bounceOutUp;
+    animation-name: bounceOutUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceOutUp {
+    20% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    40%,
+    45% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 20px, 0);
+        transform: translate3d(0, 20px, 0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -2000px, 0);
+        transform: translate3d(0, -2000px, 0);
+    }
+}
+
+@keyframes bounceOutUp {
+    20% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    40%,
+    45% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 20px, 0);
+        transform: translate3d(0, 20px, 0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -2000px, 0);
+        transform: translate3d(0, -2000px, 0);
+    }
 }

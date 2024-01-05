@@ -5,6 +5,13 @@ let quantity = document.querySelector(".quantity");
 let orderDiv = document.getElementById('order1');
 let cancel = document.getElementById('cancel');
 
+let addBev = document.querySelector(".addBev"),
+modal = document.querySelector(".modal"),
+overlay = document.querySelector(".close-modal");
+
+
+
+
 callFunctions();
 
 // Function for increasing quantity
@@ -30,8 +37,21 @@ function removeDiv(){
     
 }
 
+addBev.addEventListener("click", function(e) {
+    e.preventDefault();
+    modal.style.display = "block";
+
+});
+
+overlay.addEventListener("click", function(e) {
+    e.preventDefault();
+    modal.style.display = "none";
+    // modal.classList.add("removeModal");
+});
+
 function callFunctions(){
     increment();
     decrement();
     removeDiv();
 }
+
