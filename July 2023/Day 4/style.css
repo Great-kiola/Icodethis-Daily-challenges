@@ -140,7 +140,7 @@ h2{
     background-color: var(--totalDiv);
     padding: 15px 20px;
     position: absolute;
-    top: -120px;
+    top: -180px;
     border-radius: 10px;
     width: 450px;
 }
@@ -148,9 +148,18 @@ h2{
 .beverages{
     display: flex;
     justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--black);
 }
 
-.bevDetails .price{}
+.bevDetails h2{
+    font-size: 1.3rem;
+}
+
+.bevDetails .price{
+    font-size: .9rem;
+    font-weight: 600;
+}
 
 
 :root{
@@ -159,4 +168,5 @@ h2{
     --cardColor: #fff;
     --accentColor: #ff6849;
     --totalDiv: #f5f4f7;
+    --black: #000;
 }
