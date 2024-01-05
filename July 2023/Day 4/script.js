@@ -41,9 +41,6 @@ function removeDiv(){
 
 addBev.addEventListener("click", function(e) {
     e.preventDefault();
-    // modal.style.display = "block";
-    // modal.classList.add("open")
-
     modal.showModal();
 });
 
