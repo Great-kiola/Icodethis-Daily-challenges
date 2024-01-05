@@ -173,7 +173,7 @@ h2 {
     font-weight: 600;
 }
 
-.open{
+.modal[open]{
     display: block;
     animation: slideInDown .9s ease;
 }

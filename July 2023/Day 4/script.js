@@ -14,9 +14,6 @@ let openModal = document.querySelector(".open");
 let closeModal = document.querySelector(".close");
 
 
-
-
-
 callFunctions();
 
 // Function for increasing quantity
@@ -45,7 +42,9 @@ function removeDiv(){
 addBev.addEventListener("click", function(e) {
     e.preventDefault();
     // modal.style.display = "block";
-    modal.classList.add("open");
+    // modal.classList.add("open")
+
+    modal.showModal();
 });
 
 overlay.addEventListener("click", function(e) {
