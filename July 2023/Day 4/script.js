@@ -14,6 +14,22 @@ let openModal = document.querySelector(".open");
 let closeModal = document.querySelector(".close");
 
 
+let checkOutModal = document.querySelector(".checkOutModal");
+let bgBackground = document.querySelector(".overlay");
+let checkoutBtn = document.querySelector(".btn");
+
+checkoutBtn.addEventListener("click", () => {
+    checkOutModal.classList.add("active");
+    bgBackground.classList.add("active");
+});
+
+
+bgBackground.addEventListener("click", () => {
+    checkOutModal.classList.remove("active");
+    bgBackground.classList.remove("active");
+});
+
+
 callFunctions();
 
 // Function for increasing quantity

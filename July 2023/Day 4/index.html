@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Unicons Link -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
     <title>Order summary(Day 4)</title>
 </head>
+
 <body>
+    <div class="overlay"></div>
+
     <main class="container">
         <div class="card">
             <div class="div">
-                <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d2/Pizza_Hut_logo.svg/2177px-Pizza_Hut_logo.svg.png" alt="pizza hut logo">
+                <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d2/Pizza_Hut_logo.svg/2177px-Pizza_Hut_logo.svg.png"
+                    alt="pizza hut logo" />
             </div>
-
 
             <div class="mainDiv">
                 <div class="textDiv">
                     <h1>Your order from</h1>
                     <p>Pizza Hut</p>
                 </div>
-    
+
                 <div class="orderDiv" id="order1">
-                    <h2>Brittish Pizza | Medium</h2>
-                    
+                    <h2>British Pizza | Medium</h2>
+
                     <div class="counter">
                         <i class="uil uil-plus" id="add"></i>
                         <h2><span class="quantity">1</span></h2>
@@ -37,44 +41,32 @@
                         <i class="uil uil-times-circle" id="cancel"></i>
                     </div>
                 </div>
-    
+
                 <div class="addBeverage">
                     <button class="addBev">
                         <i class="uil uil-shopping-basket"></i>
                         <h2>Add a beverage</h2>
                     </button>
                 </div>
-    
+
                 <div class="totalDiv">
                     <div class="total sbTotal">
                         <h1>Subtotal</h1>
                         <h2>£20.22</h2>
                     </div>
-    
+
                     <div class="total shipping">
                         <h1>Shipping</h1>
                         <h2>£99.99</h2>
                     </div>
-    
+
                     <div class="total finalTotal">
                         <h1>Total (TVA incl.)</h1>
                         <h2>£129.99</h2>
                     </div>
                 </div>
-    
+
                 <button class="btn">Checkout</button>
-
-                <!-- Checkout Modal -->
-
-                <div class="checkOutModal">
-                    <i class="uil uil-check-circle"></i>
-                    <div class="checkOutText">
-                        <h1>Your order is complete</h1>
-                        <p>Order no : #<span>2013</span></p>
-                    </div>
-                </div>
-
-                <div class="overlay"></div>
 
                 <!-- MODAL -->
                 <div class="modal">
@@ -83,17 +75,16 @@
                             <h2>Fanta</h2>
                             <h2 class="price">£30.99</h2>
                         </div>
-                        
+
                         <div class="counter">
                             <i class="uil uil-plus" id="add"></i>
                             <h2><span class="quantity">1</span></h2>
                             <i class="uil uil-minus" id="remove"></i>
                         </div>
-    
+
                         <div class="price">
                             <i class="uil uil-times-circle" id="cancel"></i>
                         </div>
-                        
                     </div>
 
                     <!-- Beverage 2 -->
@@ -102,17 +93,16 @@
                             <h2>Fanta</h2>
                             <h2 class="price">£30.99</h2>
                         </div>
-                        
+
                         <div class="counter">
                             <i class="uil uil-plus" id="add"></i>
                             <h2><span class="quantity">1</span></h2>
                             <i class="uil uil-minus" id="remove"></i>
                         </div>
-    
+
                         <div class="price">
                             <i class="uil uil-times-circle" id="cancel"></i>
                         </div>
-                        
                     </div>
 
                     <button class="close-modal">
@@ -121,8 +111,19 @@
                 </div>
             </div>
         </div>
+
+        <!-- Checkout Modal -->
+
+        <div class="checkOutModal">
+            <i class="uil uil-check-circle"></i>
+            <div class="checkOutText">
+                <h1>Your order is complete</h1>
+                <p>Order no : #<span>2013</span></p>
+            </div>
+        </div>
     </main>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>

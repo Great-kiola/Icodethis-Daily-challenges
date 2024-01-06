@@ -193,32 +193,52 @@ h2 {
 
 /* Checkout Modal */
 .checkOutModal{
-    background-color: var(--totalDiv);
-    position: absolute;
     width: 500px;
     height: 500px;
-    left: -25px;
-    top: 0px;
-    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 15px;
+    background-color: var(--totalDiv);
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
 }
 
-.uil-check-circle{
+.checkOutModal i{
     font-size: 4rem;
+    color: var(--accentColor);
 }
 
 .checkOutText p{
     text-align: center;
 }
 
+.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .overlay{
-    background-color: var(--black);
-    width: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
     height: 100%;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 
