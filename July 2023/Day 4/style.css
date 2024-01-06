@@ -195,15 +195,21 @@ h2 {
 .checkOutModal{
     background-color: var(--totalDiv);
     position: absolute;
+    width: 500px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-direction: column;
+    border-radius: 20px;
 }
 
-.checkout{
-    width: 500px;
-    height: 500px;
+.uil-check-circle{
+    font-size: 4rem;
+}
+
+.checkOutText p{
+    text-align: center;
 }
 
 .overlay{
@@ -211,6 +217,7 @@ h2 {
     width: 100vh;
     height: 100%;
 }
+
 
 /* Root */
 :root {
