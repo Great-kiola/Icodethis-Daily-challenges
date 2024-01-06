@@ -57,7 +57,7 @@ function removeDiv(){
 
 addBev.addEventListener("click", function(e) {
     e.preventDefault();
-    modal.showModal();
+    modal.style.display = "block";
 });
 
 overlay.addEventListener("click", function(e) {
