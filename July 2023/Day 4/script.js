@@ -74,12 +74,9 @@ let shippingTotal = document.querySelector(".shippingPrice");
 
 const allTotal = () => {
     let total = totalPrice.innerHTML;
+    totalPrice.innerHTML = (Number(shippingTotal.innerHTML) + Number(subtotal.innerHTML));
 
-    console.log(total);
-    // totalPrice.innerHTML = 
-
-    subtotal.innerText.toString();
-    // console.log(subtotal.innerText.toString() + shippingTotal.innerText.toString());
+    console.log(Number(total));
 }
 
 allTotal();
