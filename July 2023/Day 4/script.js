@@ -1,12 +1,12 @@
 let add = document.getElementById('add'),
- remove = document.getElementById('remove');
+remove = document.getElementById('remove');
 
 let quantity = document.querySelector(".quantity");
 let orderDiv = document.getElementById('order1');
 let cancel = document.getElementById('cancel');
 
 let addBev = document.querySelector(".addBev"),
-modal = document.querySelector(".modal"),
+    modal = document.querySelector(".modal"),
 overlay = document.querySelector(".close-modal");
 
 
@@ -18,57 +18,69 @@ let checkOutModal = document.querySelector(".checkOutModal");
 let bgBackground = document.querySelector(".overlay");
 let checkoutBtn = document.querySelector(".btn");
 
-checkoutBtn.addEventListener("click", () => {
-    checkOutModal.classList.add("active");
-    bgBackground.classList.add("active");
-});
+let closeBev = document.querySelector("#close");
+
+// Function
+function checkoutBtnClick() {
+    checkoutBtn.addEventListener("click", () => {
+        checkOutModal.classList.add("active");
+        bgBackground.classList.add("active");
+    });
 
 
-bgBackground.addEventListener("click", () => {
-    checkOutModal.classList.remove("active");
-    bgBackground.classList.remove("active");
-});
-
-
-callFunctions();
+    bgBackground.addEventListener("click", () => {
+        checkOutModal.classList.remove("active");
+        bgBackground.classList.remove("active");
+    });
+}
+checkoutBtnClick();
 
 // Function for increasing quantity
-function increment (){
-    add.addEventListener('click', function(){
-        quantity.innerHTML++
-    })
-
-}
+add.addEventListener('click', function () {
+    quantity.innerHTML++
+})
 
 // Function for Decreasing quantity
-function decrement(){
-    remove.addEventListener('click', function(){
-        quantity.innerHTML--
-    })
-}
+remove.addEventListener('click', function () {
+    quantity.innerHTML--
+})
 
 // Function for removing the orderDiv
-function removeDiv(){
-    cancel.addEventListener('click', function(){
-        orderDiv.remove();
+cancel.addEventListener('click', function () {
+    orderDiv.remove();
+});
+
+// AddBeverage Event
+function addBevClick() {
+    addBev.addEventListener("click", function (e) {
+        e.preventDefault();
+        modal.style.display = "block";
+        modal.classList.remove("close");
     });
-    
+
+
+    closeBev.addEventListener("click", () => {
+        modal.classList.add("close");
+    })
+
+}
+addBevClick();
+
+
+// Total section
+let totalPrice = document.querySelector(".finalPrice");
+let subtotal = document.querySelector(".subtotalPrice");
+let shippingTotal = document.querySelector(".shippingPrice");
+
+const allTotal = () => {
+    let total = totalPrice.innerHTML;
+
+    console.log(total);
+    // totalPrice.innerHTML = 
+
+    subtotal.innerText.toString();
+    // console.log(subtotal.innerText.toString() + shippingTotal.innerText.toString());
 }
 
-addBev.addEventListener("click", function(e) {
-    e.preventDefault();
-    modal.style.display = "block";
-});
-
-overlay.addEventListener("click", function(e) {
-    e.preventDefault();
-    modal.classList.remove("open");
-    modal.classList.add("closeModal");
-});
-
-function callFunctions(){
-    increment();
-    decrement();
-    removeDiv();
-}
-
+allTotal();
+// console.log(totalPrice.innerHTML + " " + subtotal.innerHTML + " " + shippingTotal.innerHTML);

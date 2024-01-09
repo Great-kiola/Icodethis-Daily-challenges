@@ -1,3 +1,4 @@
+/* Add CSS here */
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap');
 
 * {
@@ -149,11 +150,11 @@ h2 {
     top: -195px;
     width: 420px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    background: rgba( 255, 255, 255, 0.8 );
-    backdrop-filter: blur( 9.5px );
-    -webkit-backdrop-filter: blur( 9.5px );
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
     animation: slideInDown .9s ease;
 }
 
@@ -173,8 +174,9 @@ h2 {
     font-weight: 600;
 }
 
-.close{
+.close {
     animation: bounceOutUp .9s ease;
+    opacity: 0;
 }
 
 .close-modal {
@@ -184,12 +186,13 @@ h2 {
     border: none;
     font-size: 1.2rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 /* Checkout Modal */
-.checkOutModal{
+.checkOutModal {
     width: 500px;
-    height: 500px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,14 +207,15 @@ h2 {
     opacity: 0;
     transition: all 0.3s ease;
     pointer-events: none;
+    
 }
 
-.checkOutModal i{
+.checkOutModal i {
     font-size: 4rem;
     color: var(--accentColor);
 }
 
-.checkOutText p{
+.checkOutText p {
     text-align: center;
 }
 
@@ -220,7 +224,7 @@ h2 {
     pointer-events: auto;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
