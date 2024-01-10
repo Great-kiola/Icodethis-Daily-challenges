@@ -8,3 +8,11 @@ body{
     line-height: 1.5;
     min-height: 100vh;
 }
+
+
+:root{
+    --contColor: #f3f5f7;
+    --cardColor: #fff;
+    --buttonColor: #13161eff;
+    --tipColor: #e1e1e1ff;
+}
