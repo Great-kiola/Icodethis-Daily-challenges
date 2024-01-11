@@ -47,56 +47,58 @@ body{
     flex-direction: column;
     border-radius: 10px;
     position: relative;
-}
 
-.card1 button{
-    background-color: var(--buttonColor);
-    color: var(--cardColor);
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-}
+    button{
+        background-color: var(--buttonColor);
+        color: var(--cardColor);
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+    }
 
-.card1 button:hover{
-    background-color: #feb048;
+    button:hover{
+        background-color: #feb048;
+    }
 }
 
 .texts{
     text-align: center;
-}
+    
+    h1{
+        font-size: .9rem;
+    }
 
-.texts h1{
-    font-size: .9rem;
-}
+    h2{
+        font-weight: 800;
+        font-size: 2rem;
+    }
 
-.texts h2{
-    font-weight: 800;
-    font-size: 2rem;
-}
-
-.texts h2 span{
-    font-weight: 400;
-    font-size: .8rem;
+    h2 span{
+        font-weight: 400;
+        font-size: .8rem;
+    }
 }
 
 ul {
     list-style: none;
     margin-top: 20px;
-}
-  
-ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: red; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
-}
 
-ul li{
-    font-size: .8rem;
-    font-weight: 500;
+    li::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: red; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+    
+    li{
+        font-size: .8rem;
+        font-weight: 500;
+    }
+
+
 }
 
 .basic::before{
