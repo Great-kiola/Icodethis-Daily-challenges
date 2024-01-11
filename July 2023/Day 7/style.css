@@ -1,12 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
 }
 
 body{
     line-height: 1.5;
     min-height: 100vh;
+    background-image: linear-gradient(#feb048, #ffd148);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: var(--contColor);
+    padding: 40px;
+    border-radius: 10px;
+    width: 750px;
+
+    h1{
+        font-size: 1.2rem;
+    }
+
+    p{
+        width: 550px;
+        font-size: .8rem;
+    }
+}
+
+.cards{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.card1{
+    width: 300px;
+    padding: 40px;
+    background-color: var(--cardColor);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.card1 button{
+    background-color: var(--buttonColor);
+    color: var(--cardColor);
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+ul li{
+    list-style: red;
 }
 
 
@@ -15,4 +67,5 @@ body{
     --cardColor: #fff;
     --buttonColor: #13161eff;
     --tipColor: #e1e1e1ff;
+    --linearGradient: #feb048, #ffd148;
 }
