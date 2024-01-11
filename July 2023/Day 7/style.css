@@ -40,12 +40,13 @@ body{
 
 .card1{
     width: 300px;
-    padding: 40px;
+    padding: 80px 40px 40px;
     background-color: var(--cardColor);
     display: flex;
     gap: 20px;
     flex-direction: column;
     border-radius: 10px;
+    position: relative;
 }
 
 .card1 button{
@@ -55,6 +56,10 @@ body{
     padding: 15px;
     border: none;
     border-radius: 10px;
+}
+
+.card1 button:hover{
+    background-color: #feb048;
 }
 
 .texts{
@@ -94,6 +99,29 @@ ul li{
     font-weight: 500;
 }
 
+
+
+.basic::before{
+    position: absolute;
+    content: "sold Out";
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 3;
+    top: 0;
+    left: 80px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: var(--tipColor);
+}
+
+.basic .waitlist{
+    background: none;
+    border: 1px solid var(--tipColor);
+    color: var(--buttonColor);
+    font-weight: 800;
+}
 
 :root{
     --contColor: #f3f5f7;
