@@ -20,7 +20,7 @@ body{
     background-color: var(--contColor);
     padding: 40px;
     border-radius: 10px;
-    width: 750px;
+    width: 900px;
 
     h1{
         font-size: 1.2rem;
@@ -33,7 +33,7 @@ body{
 }
 
 .cards{
-    margin-top: 20px;
+    margin-top: 45px;
     display: flex;
     gap: 20px;
 }
@@ -45,6 +45,7 @@ body{
     display: flex;
     gap: 20px;
     flex-direction: column;
+    border-radius: 10px;
 }
 
 .card1 button{
@@ -56,9 +57,41 @@ body{
     border-radius: 10px;
 }
 
+.texts{
+    text-align: center;
+}
+
+.texts h1{
+    font-size: .9rem;
+}
+
+.texts h2{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.texts h2 span{
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+  
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
 
 ul li{
-    list-style: red;
+    font-size: .8rem;
+    font-weight: 500;
 }
 
 
