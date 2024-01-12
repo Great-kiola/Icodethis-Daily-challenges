@@ -55,6 +55,7 @@ body{
         padding: 15px;
         border: none;
         border-radius: 10px;
+        cursor: pointer;
     }
 
     button:hover{
