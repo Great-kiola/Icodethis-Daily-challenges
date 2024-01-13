@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 body{
@@ -11,11 +14,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .container {
     background-color: var(--contColor);
-    padding: 20px;
+    padding: 50px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 850px;
 }
@@ -31,18 +35,26 @@ body{
 }
 
 .body h1{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .body .poster img{
-    width: 300px;
+    width: 250px;
 }
 
+.heading{
+    margin-bottom: 30px;
+}
+
+.movieTexts{
+    line-height: 1.6;
+}
 
 .movieCast{
     display: flex;
     align-items: stretch;
-    gap: 30px;
+    gap: 35px;
+    margin-top: 20px;
 }
 
 .movieDetails{
@@ -51,6 +63,10 @@ body{
 
 ul li{
     list-style: none;
+}
+
+.screnwriter{
+    margin-top: 25px;
 }
 
 /* .card{
