@@ -7,11 +7,78 @@
 body{
     line-height: 1.5;
     min-height: 100vh;
+    background-color: var(--bgColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.container {
+    background-color: var(--contColor);
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 850px;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+
+.body{
+    display: flex;
+    gap: 20px;
+}
+
+.body h1{
+    font-size: 1.3rem;
+}
+
+.body .poster img{
+    width: 300px;
+}
+
+
+.movieCast{
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.movieDetails{
+    margin-bottom: 15px;
+}
+
+ul li{
+    list-style: none;
+}
+
+/* .card{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+    font-size: 35px;
+    background-color: var(--yellow); 
+} */
+
+/* .poster{
+    background-color: red;
+    grid-row: span 2;
+}
+
+.movieDetails{
+    background-color: blue;
+}
+
+.movieCast{
+    background-color: turquoise;
+} */
 
 :root{
     --bgColor: #f1f5f9;
     --contColor: #ffffff;
     --btnColor: #000;
+    --yellow: #ffc600;
 }
