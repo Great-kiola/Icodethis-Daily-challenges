@@ -55,6 +55,7 @@ body{
 
 .movieCast a{
     text-decoration: none;
+    color: var(--blue);
 }
 
 .movieCast{
@@ -71,8 +72,6 @@ ul li{
     list-style: none;
 }
 
-
-
 .screnwriter{
     margin-top: 25px;
 }
@@ -83,16 +82,77 @@ ul li{
 
 .rate span{
     font-weight: 800;
-    color: blue;
+    color: var(--blue);
 }
 
 .more{
     margin-top: 10px;
+    color: var(--blue);
 }
+
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.price{
+    display: flex;
+    gap: 75px;
+}
+
+.price button{
+    background: transparent;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.price button:hover{
+    background: var(--btnColor);
+    color: var(--bgColor);
+}
+
+.btn{
+    background-color: var(--btnColor);
+    color: var(--contColor);
+    border-radius: 30px;
+    padding: 10px 55px 10px 20px;
+    position: relative;
+}
+
+.btn:hover{
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.btn:hover .play{
+    border: 3px solid var(--blue);
+}
+
+.play{
+    background-color: var(--contColor);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    border: 3px solid var(--btnColor);
+    display: flex;
+    align-items: center;
+}
+
+.play img{
+    width: 30px;
+    margin: auto;
+}
+
 
 :root{
     --bgColor: #f1f5f9;
     --contColor: #ffffff;
     --btnColor: #000;
     --yellow: #ffc600;
+    --blue: #3276c3;
 }
