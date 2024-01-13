@@ -8,3 +8,10 @@ body{
     line-height: 1.5;
     min-height: 100vh;
 }
+
+
+:root{
+    --bgColor: #f1f5f9;
+    --contColor: #ffffff;
+    --btnColor: #000;
+}
