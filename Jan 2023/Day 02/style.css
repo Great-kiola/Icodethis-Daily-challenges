@@ -48,13 +48,19 @@ body{
 
 .movieTexts{
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.movieCast a{
+    text-decoration: none;
 }
 
 .movieCast{
     display: flex;
     align-items: stretch;
     gap: 35px;
-    margin-top: 20px;
 }
 
 .movieDetails{
@@ -65,32 +71,24 @@ ul li{
     list-style: none;
 }
 
+
+
 .screnwriter{
     margin-top: 25px;
 }
 
-/* .card{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgba(0, 0, 0, 0.03);
-    border-radius: 3px;
-    font-size: 35px;
-    background-color: var(--yellow); 
-} */
-
-/* .poster{
-    background-color: red;
-    grid-row: span 2;
+.rate{
+    font-weight: 400;
 }
 
-.movieDetails{
-    background-color: blue;
+.rate span{
+    font-weight: 800;
+    color: blue;
 }
 
-.movieCast{
-    background-color: turquoise;
-} */
+.more{
+    margin-top: 10px;
+}
 
 :root{
     --bgColor: #f1f5f9;
