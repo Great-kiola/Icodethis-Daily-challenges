@@ -8,3 +8,9 @@ body{
     line-height: 1.5;
     min-height: 100vh;
 }
+
+:root{
+    --darkModeBg: #283766;
+    --lightModeBg: #ffffff;
+    --btnColor: #6a83d3ff;
+}
