@@ -20,24 +20,29 @@ body{
     background-color: var(--lightModeBg);
     border-radius: 10px;
     display: flex;
-    width: 350px;
-    height: 600px;
+    /* width: 350px; */
+    /* height: 600px; */
     position: relative;
+    transition: all 0.3s ease;
 }
 
 .details{
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .details img{
-    margin: 5px auto;
+    margin: 5px auto 35px;
 }
 
-.inputs , .buttonDiv{
-    padding: 40px;
+.inputs{
+    padding: 40px 40px 0;
+}
+
+.buttonDiv{
+    padding: 10px 40px 40px;
 }
 
 label{
@@ -79,7 +84,8 @@ input[type="text"]{
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    display: flex;
+    display: none;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     color: var(--lightModeBg);
