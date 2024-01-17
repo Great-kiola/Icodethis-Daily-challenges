@@ -17,20 +17,46 @@ body{
 }
 
 .container{
-    padding: 50px 35px;
+    /* padding: 50px 35px; */
     background-color: var(--lightModeBg);
     border-radius: 10px;
     display: flex;
 }
 
-h2{
+.details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.details img{
+    margin: 5px auto;
+}
+
+.inputs, .{
+    padding: 40px;
+}
+
+label{
     font-size: .9rem;
+    margin-right: 10px;
 }
 
 input[type="text"]{
     width: 250px;
     padding: 15px;
     margin: 10px auto;
+}
+
+.username, .password{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.buttonDiv{
+    width: 100%;
 }
 
 .btn{
