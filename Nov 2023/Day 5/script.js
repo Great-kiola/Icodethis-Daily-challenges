@@ -10,5 +10,8 @@ btn.addEventListener("click", () => {
     container.style.backgroundColor = "var(--darkModeBg)";
     details.style.display = "none";
     offDiv.style.display = "flex";
+    
+    container.style.width = "350px"
+    container.style.height= "600px"
 
 })
