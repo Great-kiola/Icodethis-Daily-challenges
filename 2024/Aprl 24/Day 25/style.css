@@ -8,7 +8,11 @@ body{
     line-height: 1.5;
     min-height: 100vh;
     background-color: var(--bgColor);
-    
+
+}
+
+img{
+    width: 20px;
 }
 
 :root{
