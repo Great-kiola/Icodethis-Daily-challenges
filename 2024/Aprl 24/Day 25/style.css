@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background-color: var(--bgColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.heading h1{
+    font-size: 1.7rem;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.searchBar{
+    position: relative;
+}
+
+#search{
+    width: 350px;  
+    border-radius: 20px;
+    padding: 15px;
+    padding-left: 48px;
+}
+
+.icon-tabler-search{
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 12px;
+}
+
+.ApiCollection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+img{
+    width: 30px;
+}
+
+.headingText{
+    font-size: 1.2em;
+    margin-left: 8px;
+}
+
+.card{
+    width: 320px;
+    max-width: 100%;
+    margin: 8px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.ApiDetail{
+    margin-left: 12px;
+}
+
+.ApiDetail h2{
+    font-size: .97rem;
+    font-weight: 500;
+}
+
+.ApiDetail h1{
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: "Space Mono", monospace;
+}
+
+.ApiDetail p{
+    font-size: .8rem;
+    color: rgb(158, 158, 158);
+    font-weight: 500;
+}
+
+.subFeatures{
+    display: flex;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.ApiDocs{
+    background-color: black;
+    color: #fafcfe;
+    padding: 2px 7px;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 1000px){
+    .ApiCollection{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .heading h1{
+        width: 450px;
+        font-size: 1.3rem;
+        margin: 20px 0px;
+    }
+
+    .card{
+        max-width: 100%;
+    }
+
+    .ApiDocs{
+        background-color: blue;
+        color: #fafcfe;
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+
+}
+
+@media (max-width: 700px){
+    .ApiCollection{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card{
+        width: 500px;
+    }
+}
+
+
+
+
+:root{
+    --bgColor: #fafcfe;
+}

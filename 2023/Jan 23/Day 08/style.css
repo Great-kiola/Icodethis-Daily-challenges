@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+    background-color: var(--bgColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container {
+    background-color: var(--contColor);
+    padding: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 950px;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+
+.body{
+    display: flex;
+    gap: 20px;
+}
+
+.body h1{
+    font-size: 1.2rem;
+}
+
+.body .poster img{
+    width: 250px;
+}
+
+.heading{
+    margin-bottom: 30px;
+}
+
+.movieTexts{
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.movieCast a{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.movieCast{
+    display: flex;
+    align-items: stretch;
+    gap: 35px;
+}
+
+.movieDetails{
+    margin-bottom: 15px;
+}
+
+ul li{
+    list-style: none;
+}
+
+.screnwriter{
+    margin-top: 25px;
+}
+
+.rate{
+    font-weight: 400;
+}
+
+.rate span{
+    font-weight: 800;
+    color: var(--blue);
+}
+
+.more{
+    margin-top: 10px;
+    color: var(--blue);
+}
+
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.price{
+    display: flex;
+    gap: 75px;
+}
+
+.price button{
+    background: transparent;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.price button:hover{
+    background: var(--btnColor);
+    color: var(--bgColor);
+}
+
+.btn{
+    background-color: var(--btnColor);
+    color: var(--contColor);
+    border-radius: 30px;
+    padding: 10px 55px 10px 20px;
+    position: relative;
+}
+
+.btn:hover{
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.btn:hover .play{
+    border: 3px solid var(--blue);
+}
+
+.play{
+    background-color: var(--contColor);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    border: 3px solid var(--btnColor);
+    display: flex;
+    align-items: center;
+}
+
+.play img{
+    width: 30px;
+    margin: auto;
+}
+
+:root{
+    --bgColor: #f1f5f9;
+    --contColor: #ffffff;
+    --btnColor: #000;
+    --yellow: #ffc600;
+    --blue: #3276c3;
+}

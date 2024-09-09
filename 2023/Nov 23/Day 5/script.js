@@ -1,0 +1,18 @@
+let btn = document.querySelector(".btn");
+let offBtn = document.querySelector(".offDiv");
+let container = document.querySelector(".container");
+let details = document.querySelector(".details");
+
+let offDiv = document.querySelector(".offDiv");
+
+
+btn.addEventListener("click", () => {
+    container.style.backgroundColor = "var(--darkModeBg)";
+    container.style.width = "350px";
+    container.style.height= "600px";
+
+    details.style.display = "none";
+    offDiv.style.display = "flex";
+    
+
+})
